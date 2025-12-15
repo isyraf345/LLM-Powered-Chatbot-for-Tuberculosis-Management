@@ -4,6 +4,8 @@ from nli_verifier import NLIVerifier
 from generator import AnswerGenerator
 from config import DPR_MODELS
 
+if "chat_history" not in st.session_state:
+    st.session_state.chat_history = []
 
 @st.cache_resource
 def load_retriever(model_name: str):
@@ -31,14 +33,11 @@ def build_context(passages, max_chars=3500):
         total += len(block)
     return "".join(blocks)
 
-
 def main():
     st.title("🫁 LLM-Powered Chatbot for Tuberculosis Management")
     st.caption("DPR + FAISS + GPT + Biomedical NLI Verification")
 
-    # -----------------------------
-    # DPR MODEL DROPDOWN (UPDATED)
-    # -----------------------------
+    # Sidebar
     st.sidebar.header("⚙️ Model Settings")
     model_choice = st.sidebar.selectbox(
         "Choose DPR Retriever Model:",
@@ -54,39 +53,72 @@ def main():
     verifier = load_verifier()
     generator = load_generator()
 
-    question = st.text_input("Ask a TB-related question:")
+    # -----------------------------
+    # DISPLAY CHAT HISTORY
+    # -----------------------------
+    for turn in st.session_state.chat_history:
+        with st.chat_message("user"):
+            st.write(turn["question"])
 
-    if st.button("Get Answer") and question.strip():
+        with st.chat_message("assistant"):
+            st.write(turn["answer"])
 
-        with st.spinner("Retrieving relevant TB information..."):
-            passages = retriever.search(question, k=5)
+            st.subheader("🛡 NLI Verification")
+            st.metric("Prediction", turn["nli_label"].capitalize())
+            st.metric("Entailment Score", f"{turn['entail_score']:.3f}")
 
-        st.subheader("🔍 Top Retrieved Passages")
-        for idx, p in enumerate(passages):
-            with st.expander(f"Passage {idx+1} (score={p['score']:.3f})"):
-                st.write(f"Source: {p['source']} (page {p['page']})")
-                st.write(p["text"])
+            with st.expander("🔍 Retrieved Passages"):
+                for idx, p in enumerate(turn["passages"]):
+                    st.markdown(f"**Passage {idx+1}** (score={p['score']:.3f})")
+                    st.write(f"Source: {p['source']} (page {p['page']})")
+                    st.write(p["text"])
+                    st.divider()
 
-        # Build GPT context
-        context = build_context(passages)
+    # -----------------------------
+    # CHAT INPUT (BOTTOM)
+    # -----------------------------
+    question = st.chat_input("Ask a TB-related question...")
 
-        with st.spinner("Generating answer..."):
-            answer = generator.generate(question, context)
+    if question:
+        with st.chat_message("user"):
+            st.write(question)
 
-        st.subheader("🤖 Chatbot Answer")
-        st.write(answer)
+        with st.chat_message("assistant"):
+            with st.spinner("Retrieving relevant TB information..."):
+                passages = retriever.search(question, k=5)
 
-        # NLI Verification
-        with st.spinner("Running NLI Verification..."):
-            texts = [p["text"] for p in passages]
-            final_label, entail_score = verifier.verify_against_passages(answer, texts)
+            context = build_context(passages)
 
-        st.subheader("🛡 NLI Verification")
-        st.metric("Prediction", final_label.capitalize())
-        st.metric("Entailment Score", f"{entail_score:.3f}")
+            with st.spinner("Generating answer..."):
+                answer = generator.generate(question, context)
 
-        st.divider()
-        st.caption("This is an educational tool, not a medical diagnosis system.")
+            st.write(answer)
+
+            with st.spinner("Running NLI Verification..."):
+                texts = [p["text"] for p in passages]
+                final_label, entail_score = verifier.verify_against_passages(answer, texts)
+
+            st.subheader("🛡 NLI Verification")
+            st.metric("Prediction", final_label.capitalize())
+            st.metric("Entailment Score", f"{entail_score:.3f}")
+
+            with st.expander("🔍 Retrieved Passages"):
+                for idx, p in enumerate(passages):
+                    st.markdown(f"**Passage {idx+1}** (score={p['score']:.3f})")
+                    st.write(f"Source: {p['source']} (page {p['page']})")
+                    st.write(p["text"])
+                    st.divider()
+
+        # Save turn to session state
+        st.session_state.chat_history.append({
+            "question": question,
+            "answer": answer,
+            "passages": passages,
+            "nli_label": final_label,
+            "entail_score": entail_score
+        })
+
+    st.caption("This is an educational tool, not a medical diagnosis system.")
 
 if __name__ == "__main__":
     main()
