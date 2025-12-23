@@ -1,0 +1,9 @@
+faiss-cpu
+torch
+transformers
+openai
+tqdm
+streamlit
+numpy
+pandas
+sentence-transformers
