@@ -41,6 +41,11 @@ NLI_MODEL_NAME = "Bam3752/PubMedBERT-BioNLI-LoRA"
 # ============================
 # OpenAI
 # ============================
-
-OPENAI_API_KEY = "sk-xxxx"  # put your key when running locally
+import os
+OPENAI_API_KEY = os.getenv("OPENAI_API_KEY")
+if not OPENAI_API_KEY:
+    raise RuntimeError(
+        "OPENAI_API_KEY is not set. Add it in Streamlit Secrets or environment variables."
+    )
 OPENAI_MODEL = "gpt-4o-mini"
+
