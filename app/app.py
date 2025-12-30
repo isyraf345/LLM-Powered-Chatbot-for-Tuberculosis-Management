@@ -44,6 +44,95 @@ def main():
         layout="wide"
     )
 
+    # =============================
+    # Custom UI Theme (CSS) - Updated for a more vibrant and interesting look
+    # =============================
+    st.markdown("""
+    <style>
+    /* Main background - Soft teal for a fresh, health-inspired feel */
+    .stApp {
+        background-color: #e0f7fa;
+    }
+
+    /* Title - Vibrant teal */
+    h1 {
+        color: #00695c;
+        font-weight: 700;
+    }
+
+    /* Headers - Deep teal */
+    h2, h3 {
+        color: #00796b;
+    }
+
+    /* Tabs */
+    .stTabs [data-baseweb="tab"] {
+        font-size: 16px;
+        font-weight: 600;
+        color: #004d40;
+    }
+
+    .stTabs [aria-selected="true"] {
+        background-color: #b2dfdb;
+        border-radius: 8px;
+        color: #004d40;
+    }
+
+    /* Chat messages */
+    .stChatMessage {
+        background-color: white;
+        border-radius: 12px;
+        padding: 12px;
+        margin-bottom: 10px;
+        box-shadow: 0 2px 4px rgba(0,0,0,0.05);
+    }
+
+    /* User message - Vibrant blue accent */
+    .stChatMessage[data-testid="chat-message-user"] {
+        border-left: 6px solid #0288d1;
+    }
+
+    /* Assistant message - Fresh green accent */
+    .stChatMessage[data-testid="chat-message-assistant"] {
+        border-left: 6px solid #009688;
+    }
+
+    /* Sidebar - Light cyan */
+    section[data-testid="stSidebar"] {
+        background-color: #b2ebf2;
+    }
+
+    /* Buttons - Vibrant teal */
+    .stButton > button {
+        background-color: #00acc1;
+        color: white;
+        border-radius: 8px;
+        padding: 0.5em 1em;
+        font-weight: 600;
+        border: none;
+        transition: background-color 0.3s;
+    }
+
+    .stButton > button:hover {
+        background-color: #00838f;
+    }
+
+    /* Expanders */
+    details summary {
+        font-weight: 600;
+        color: #00796b;
+    }
+
+    /* Info box - Soft teal */
+    div[data-testid="stAlert"] {
+        background-color: #e0f2f1;
+        border-radius: 10px;
+        border-left: 5px solid #009688;
+    }
+    </style>
+    """, unsafe_allow_html=True)
+
+
     st.title("🫁 LLM-Powered Tuberculosis Management System")
 
     # =============================
@@ -179,11 +268,6 @@ def main():
         - Traditional keyword search (e.g., TF-IDF, BM25) struggles with medical phrasing.
         - DPR encodes both questions and passages into dense vectors, allowing
         semantic matching.
-
-        Models used:
-        - Single-NQ
-        - Multiset
-        - LFQA
                     
         ### Dense Passage Retrieval (DPR) Variants Used
 
@@ -206,7 +290,7 @@ def main():
         (e.g., synonyms, paraphrasing).
 
         ---
-        ### 🔹 FAISS (Vector Database)
+        ### 🔹 FAISS
         Purpose: Efficient similarity search over large numbers of embeddings.
         Why FAISS?
         - Optimized for fast nearest-neighbor search
