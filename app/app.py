@@ -302,7 +302,7 @@ def main():
         - Retrieves Top-K most relevant passages for each query
 
         ---
-        ### 🔹 Large Language Model (GPT-4o)
+        ### 🔹 Large Language Model (gpt-4o-mini)
         Purpose: Generate human-readable answers.
 
         ---
@@ -320,3 +320,4 @@ def main():
 # =============================
 if __name__ == "__main__":
     main()
+
