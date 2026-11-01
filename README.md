@@ -4,6 +4,23 @@ Current application: FastAPI + DPR retrieval + local FAISS indexes + GPT-4o-mini
 The Streamlit interface remains available as a reference during frontend migration.
 This is an educational research project, not a diagnostic service.
 
+## Start here: roadmap and agent handoff
+
+**Phases 1 and 2 are implemented and pushed. Phase 3 (LangSmith observability) is next.**
+Live generation testing and reviewed evaluation labels remain outstanding.
+
+Read [the seven-phase roadmap and handoff](docs/ROADMAP.md) before continuing work.
+It records agreed scope, current architecture, acceptance criteria, unresolved
+decisions, and the next implementation steps. [AGENTS.md](AGENTS.md) directs coding
+agents to that document. No previous chat history is needed to understand the plan.
+
+Suggested message for a new coding agent:
+
+> Read AGENTS.md, README.md, and docs/ROADMAP.md. Inspect the current repository and
+> Git status, summarize what is already implemented, then continue Phase 3 using
+> the handoff checklist. Preserve current chatbot behavior and the saved baselines.
+> Do not redesign the stack or start later phases without discussing the scope.
+
 ## Run locally (Windows PowerShell)
 
 Use Python 3.12. The direct dependency versions were captured from the existing
@@ -32,8 +49,10 @@ at this stage, without authentication, persistence, or a public deployment setup
 
 See [API contract and lifecycle](docs/phase-2.md) for requests, errors, and verification.
 
-Set the key privately in your local terminal. `.env.example` documents the variable;
-the application does not automatically load `.env`. Revoke/rotate the previously
+Alternatively, enter your key in the root `.env` file as `OPENAI_API_KEY=...`.
+The application loads this file automatically. Existing terminal environment
+variables take precedence. Restart the server after editing the file.
+`.env` is Git-ignored; `.env.example` is the empty template. Revoke/rotate the previously
 hardcoded key in the provider account before use. No credential is included here.
 First use may download pretrained DPR weights. Model paths are resolved relative to the project, preserving the newer GitHub fix.
 
