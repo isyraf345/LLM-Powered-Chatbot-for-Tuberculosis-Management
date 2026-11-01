@@ -20,8 +20,7 @@ Set-Location app
 Set the key privately in your local terminal. `.env.example` documents the variable;
 the application does not automatically load `.env`. Revoke/rotate the previously
 hardcoded key in the provider account before use. No credential is included here.
-First use may download pretrained DPR weights. The current app must be launched
-from `app/` because artifact paths remain relative until the backend refactor.
+First use may download pretrained DPR weights. Model paths are resolved relative to the project, preserving the newer GitHub fix.
 
 ## Current execution flow
 

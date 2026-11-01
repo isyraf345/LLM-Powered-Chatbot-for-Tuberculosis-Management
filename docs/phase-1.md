@@ -42,8 +42,8 @@ not a cross-platform lockfile. Direct requirements are pinned to installed versi
   does not revoke it or erase it from earlier copies/history.
 - Original source PDFs/final indexing workflow still need recovery for index rebuilds.
 - Fresh-environment installation and full Streamlit UI smoke testing remain unverified.
-- Static UI text refers to GPT-4o although the configured model is GPT-4o-mini;
-  correct this when replacing the interface.
+- GitHub integration preserved its corrected GPT-4o-mini UI label and portable
+  model paths. The baseline manifest describes the earlier local snapshot.
 - The empty `app/qa-pairs.txt` is retained to avoid unrelated cleanup.
 
 The next phase is API extraction. It should preserve the captured retrieval outputs
