@@ -1,0 +1,52 @@
+{
+  "description": "Pre-refactor source and artifact baseline; no generated-answer accuracy claim. Paths refer to original locations.",
+  "python": "3.12.4",
+  "settings": {
+    "DPR_MODELS": {
+      "single_nq": {
+        "ctx": "facebook/dpr-ctx_encoder-single-nq-base",
+        "query": "facebook/dpr-question_encoder-single-nq-base",
+        "tokenizer": "facebook/dpr-ctx_encoder-single-nq-base",
+        "index": "../models/tb_index_single_nq/tb_faiss.index",
+        "passages": "../models/tb_index_single_nq/tb_passages.json"
+      },
+      "multiset": {
+        "ctx": "facebook/dpr-ctx_encoder-multiset-base",
+        "query": "facebook/dpr-question_encoder-multiset-base",
+        "tokenizer": "facebook/dpr-ctx_encoder-single-nq-base",
+        "index": "../models/tb_index_multiset/faiss.index",
+        "passages": "../models/tb_index_multiset/passages.json"
+      },
+      "lfqa": {
+        "ctx": "vblagoje/dpr-ctx_encoder-single-lfqa-wiki",
+        "query": "vblagoje/dpr-question_encoder-single-lfqa-base",
+        "tokenizer": "facebook/dpr-ctx_encoder-single-nq-base",
+        "index": "../models/tb_index_lfqa/faiss.index",
+        "passages": "../models/tb_index_lfqa/passages.json"
+      }
+    },
+    "OPENAI_MODEL": "gpt-4o-mini",
+    "system_prompt": "You are a knowledgeable and helpful medical assistant specializing in tuberculosis (TB). Your role is to provide accurate, evidence-based information about TB based on the context provided.\n\nIMPORTANT INSTRUCTIONS:\n1. Carefully read and analyze ALL the context passages provided\n2. Extract relevant information from the passages to answer the question\n3. Synthesize information across multiple passages if needed\n4. If the passages contain partial information, provide what's available\n5. Only say information is 'not available' if the passages truly contain nothing relevant\n6. For greetings, respond warmly and offer to help with TB questions\n7. If the question is completely unrelated to TB, politely redirect to TB topics\n8. Cite specific details from the passages when possible\n9. Keep responses clear, concise, and patient-friendly",
+    "top_k": 5,
+    "context_max_characters": 3500,
+    "question_max_tokens": 256,
+    "temperature": 0.3,
+    "top_p": 0.95,
+    "max_output_tokens": 600,
+    "default_retriever": "single_nq",
+    "history_sent_to_model": false
+  },
+  "sha256": {
+    "app/app.py": "92a096403239168670458f9aeb5af285decdfddc1708e8d22bee60161ad1c642",
+    "app/dpr_retriever.py": "e631f31e0a6d2557afc7bfae08b881e0c00cade27c9d1fd6f3ed46783b5b2e66",
+    "app/generator.py": "ed3dd69060d1aefa8e8f78e78e502d1ca6cc4f26710c7d692161d57c5b8ad0e0",
+    "tb.ipynb": "539d4ada76bdceac2b54c72278058f199aa288ff97fe4799421e6fdc06dd3686",
+    "app/qa-pairs.csv": "5b6063a43343934be562f65db48c1cc13b902e9ff796788c27f1a8470388da15",
+    "models/tb_index_lfqa/faiss.index": "9c56fb4b64dbb562afd97e9f45fbc7b5c9c2808787ab0f334b6185372b731aa5",
+    "models/tb_index_lfqa/passages.json": "d23ded9eab13f9750a40409ea21fc33cbb068fed8d455651ba81333330ebad7a",
+    "models/tb_index_multiset/faiss.index": "a9e8a6110fd3022ff2a430ae34a746ab57e4dbf1c6da71b790e89c69d6d088a6",
+    "models/tb_index_multiset/passages.json": "d23ded9eab13f9750a40409ea21fc33cbb068fed8d455651ba81333330ebad7a",
+    "models/tb_index_single_nq/tb_faiss.index": "7502e071c7e1d634690ee6ba0b6f9cf5ed30ad56522e6147ba592f405d3d61ee",
+    "models/tb_index_single_nq/tb_passages.json": "d23ded9eab13f9750a40409ea21fc33cbb068fed8d455651ba81333330ebad7a"
+  }
+}

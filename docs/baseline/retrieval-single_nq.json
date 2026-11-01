@@ -1,0 +1,268 @@
+{
+  "model": "single_nq",
+  "device": "cpu",
+  "generated_answers": false,
+  "examples": [
+    {
+      "id": "symptoms",
+      "question": "What are the symptoms of tuberculosis?",
+      "retrieved_ids": [
+        [
+          317
+        ],
+        [
+          69
+        ],
+        [
+          318
+        ],
+        [
+          68
+        ],
+        [
+          397
+        ]
+      ],
+      "scores": [
+        0.7175424098968506,
+        0.6797966361045837,
+        0.6516577005386353,
+        0.6489680409431458,
+        0.642128050327301
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\ns much \nhigher among people living with HIV, and among people \naffected by risk factors such as undernutrition, diabe -\ntes, smoking and alcohol consumption. \nPreventive treatment is available for people with \nTuberculosis (TB) is an old disease. Studies of human \nskeletons show that it has affected humans for thou -\nsands of years (1). Its cause remained unknown until 24 \nMarch 1882, when Dr Robert Koch announced his dis -\ncovery of the bacillus responsible, subsequently named \nMycobacterium tuberculosis  (2). The disease is spread \nwhen people who are sick with TB expel bacteria into \nthe air (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are mo\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\nd by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick with \nTB expel bacteria into the air (e.g.\u00a0by coughing). About \na quarter of the global population is estimated to have \nbeen infected with TB (3) . Following infection, the risk \nof developing TB disease is highest in the first 2 years \n(approximately 5%), after which it is much lower (4).\n2 \nSome people will clear the infection (5, 6) . Of the total \nnumber of people who develop TB disease each year, \nabout 90% are adults, with more cases among men than \nwomen. The disease typically affects the lungs (pulmo -\nnary TB) but can affect other sites as well. \nBasic facts about TB are provided in\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\nr (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are more cases among \nmen than women. \nDiagnostic tests for TB disease have improved sub -\nstantially in recent years. There are now several rapid \nmolecular tests recommended by WHO as the initial \ndiagnostic test for TB, some of which can detect drug \nresistance simultaneously (3). These tests can be used \nat the lower levels of the health system. A point-of-care \nlateral-flow test performed on urine is also recommend-\ned by WHO; its main use is to assist with diagnosis of TB \nin people with advanced HIV disease, in combination \nwith rapid molecular tests. There are additional rapid \nmolecular tes\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\ne, \nTB and pregnancy, and the 2023 national TB inventory study in \nIndonesia. \nTuberculosis (TB) is a preventable and usually curable \ndisease. Yet in 2023, TB probably returned to being the \nworld\u2019s leading cause of death from a single infectious \nagent, following 3 years in which it was replaced by \ncoronavirus disease (COVID-19),\n1 and caused almost \ntwice as many deaths as HIV/AIDS. More than 10\u00a0 mil -\nlion people continue to fall ill with TB every year and \nthe number has been rising since 2021. Urgent action \nis required to end the global TB epidemic by 2030, a \ngoal that has been adopted by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick\n\n"
+    },
+    {
+      "id": "transmission",
+      "question": "How is tuberculosis transmitted?",
+      "retrieved_ids": [
+        [
+          317
+        ],
+        [
+          69
+        ],
+        [
+          68
+        ],
+        [
+          299
+        ],
+        [
+          116
+        ]
+      ],
+      "scores": [
+        0.6983802318572998,
+        0.6544229388237,
+        0.6480628252029419,
+        0.6125378608703613,
+        0.611233115196228
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\ns much \nhigher among people living with HIV, and among people \naffected by risk factors such as undernutrition, diabe -\ntes, smoking and alcohol consumption. \nPreventive treatment is available for people with \nTuberculosis (TB) is an old disease. Studies of human \nskeletons show that it has affected humans for thou -\nsands of years (1). Its cause remained unknown until 24 \nMarch 1882, when Dr Robert Koch announced his dis -\ncovery of the bacillus responsible, subsequently named \nMycobacterium tuberculosis  (2). The disease is spread \nwhen people who are sick with TB expel bacteria into \nthe air (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are mo\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\nd by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick with \nTB expel bacteria into the air (e.g.\u00a0by coughing). About \na quarter of the global population is estimated to have \nbeen infected with TB (3) . Following infection, the risk \nof developing TB disease is highest in the first 2 years \n(approximately 5%), after which it is much lower (4).\n2 \nSome people will clear the infection (5, 6) . Of the total \nnumber of people who develop TB disease each year, \nabout 90% are adults, with more cases among men than \nwomen. The disease typically affects the lungs (pulmo -\nnary TB) but can affect other sites as well. \nBasic facts about TB are provided in\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\ne, \nTB and pregnancy, and the 2023 national TB inventory study in \nIndonesia. \nTuberculosis (TB) is a preventable and usually curable \ndisease. Yet in 2023, TB probably returned to being the \nworld\u2019s leading cause of death from a single infectious \nagent, following 3 years in which it was replaced by \ncoronavirus disease (COVID-19),\n1 and caused almost \ntwice as many deaths as HIV/AIDS. More than 10\u00a0 mil -\nlion people continue to fall ill with TB every year and \nthe number has been rising since 2021. Urgent action \nis required to end the global TB epidemic by 2030, a \ngoal that has been adopted by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 50]\ntuberculosis in children and adolescents. \nGeneva: World Health Organization; 2022 ( https://iris.who.int/handle/10665/352522 ).\n24 Global HIV & AIDS statistics \u2013 fact sheet [website]. Geneva: UNAIDS; 2024  \n(https://www.unaids.org/en/resources/fact-sheet ).\n\n"
+    },
+    {
+      "id": "latent",
+      "question": "What is the difference between latent TB infection and active TB disease?",
+      "retrieved_ids": [
+        [
+          317
+        ],
+        [
+          69
+        ],
+        [
+          68
+        ],
+        [
+          625
+        ],
+        [
+          127
+        ]
+      ],
+      "scores": [
+        0.6909854412078857,
+        0.6858510971069336,
+        0.6730304956436157,
+        0.6656321287155151,
+        0.6628751158714294
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\ns much \nhigher among people living with HIV, and among people \naffected by risk factors such as undernutrition, diabe -\ntes, smoking and alcohol consumption. \nPreventive treatment is available for people with \nTuberculosis (TB) is an old disease. Studies of human \nskeletons show that it has affected humans for thou -\nsands of years (1). Its cause remained unknown until 24 \nMarch 1882, when Dr Robert Koch announced his dis -\ncovery of the bacillus responsible, subsequently named \nMycobacterium tuberculosis  (2). The disease is spread \nwhen people who are sick with TB expel bacteria into \nthe air (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are mo\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\nd by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick with \nTB expel bacteria into the air (e.g.\u00a0by coughing). About \na quarter of the global population is estimated to have \nbeen infected with TB (3) . Following infection, the risk \nof developing TB disease is highest in the first 2 years \n(approximately 5%), after which it is much lower (4).\n2 \nSome people will clear the infection (5, 6) . Of the total \nnumber of people who develop TB disease each year, \nabout 90% are adults, with more cases among men than \nwomen. The disease typically affects the lungs (pulmo -\nnary TB) but can affect other sites as well. \nBasic facts about TB are provided in\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\ne, \nTB and pregnancy, and the 2023 national TB inventory study in \nIndonesia. \nTuberculosis (TB) is a preventable and usually curable \ndisease. Yet in 2023, TB probably returned to being the \nworld\u2019s leading cause of death from a single infectious \nagent, following 3 years in which it was replaced by \ncoronavirus disease (COVID-19),\n1 and caused almost \ntwice as many deaths as HIV/AIDS. More than 10\u00a0 mil -\nlion people continue to fall ill with TB every year and \nthe number has been rising since 2021. Urgent action \nis required to end the global TB epidemic by 2030, a \ngoal that has been adopted by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 64]\nor progression to \nTB disease, the IGRAs (Quantiferon Gold In-Tube test [QFT-GIT] and \nT-SPOT) were found to have higher specificities [90.1% (95% CI 89.1 \nto 91.1) for QFT-GIT and 92.9% (95% CI 92.0 to 93.7) for T-SPOT] and\n\n"
+    },
+    {
+      "id": "diagnosis",
+      "question": "How is pulmonary tuberculosis diagnosed?",
+      "retrieved_ids": [
+        [
+          317
+        ],
+        [
+          69
+        ],
+        [
+          318
+        ],
+        [
+          321
+        ],
+        [
+          299
+        ]
+      ],
+      "scores": [
+        0.7035881876945496,
+        0.6512320637702942,
+        0.6445877552032471,
+        0.6408274173736572,
+        0.6371121406555176
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\ns much \nhigher among people living with HIV, and among people \naffected by risk factors such as undernutrition, diabe -\ntes, smoking and alcohol consumption. \nPreventive treatment is available for people with \nTuberculosis (TB) is an old disease. Studies of human \nskeletons show that it has affected humans for thou -\nsands of years (1). Its cause remained unknown until 24 \nMarch 1882, when Dr Robert Koch announced his dis -\ncovery of the bacillus responsible, subsequently named \nMycobacterium tuberculosis  (2). The disease is spread \nwhen people who are sick with TB expel bacteria into \nthe air (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are mo\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\nd by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick with \nTB expel bacteria into the air (e.g.\u00a0by coughing). About \na quarter of the global population is estimated to have \nbeen infected with TB (3) . Following infection, the risk \nof developing TB disease is highest in the first 2 years \n(approximately 5%), after which it is much lower (4).\n2 \nSome people will clear the infection (5, 6) . Of the total \nnumber of people who develop TB disease each year, \nabout 90% are adults, with more cases among men than \nwomen. The disease typically affects the lungs (pulmo -\nnary TB) but can affect other sites as well. \nBasic facts about TB are provided in\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\nr (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are more cases among \nmen than women. \nDiagnostic tests for TB disease have improved sub -\nstantially in recent years. There are now several rapid \nmolecular tests recommended by WHO as the initial \ndiagnostic test for TB, some of which can detect drug \nresistance simultaneously (3). These tests can be used \nat the lower levels of the health system. A point-of-care \nlateral-flow test performed on urine is also recommend-\ned by WHO; its main use is to assist with diagnosis of TB \nin people with advanced HIV disease, in combination \nwith rapid molecular tests. There are additional rapid \nmolecular tes\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\nTB drugs (conducted \nbefore drug treatments became available) found that \nabout 70% of individuals with sputum smear-positive \npulmonary TB died within 10 years of being diagnosed, \nas did about 20% of people with culture-positive (but \nsmear-negative) pulmonary TB (4).\nEffective drug treatments were first developed in the \n1940s.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 50]\ntuberculosis in children and adolescents. \nGeneva: World Health Organization; 2022 ( https://iris.who.int/handle/10665/352522 ).\n24 Global HIV & AIDS statistics \u2013 fact sheet [website]. Geneva: UNAIDS; 2024  \n(https://www.unaids.org/en/resources/fact-sheet ).\n\n"
+    },
+    {
+      "id": "treatment",
+      "question": "What treatments are used for drug-resistant tuberculosis?",
+      "retrieved_ids": [
+        [
+          317
+        ],
+        [
+          69
+        ],
+        [
+          321
+        ],
+        [
+          277
+        ],
+        [
+          318
+        ]
+      ],
+      "scores": [
+        0.6817745566368103,
+        0.6792151927947998,
+        0.677161455154419,
+        0.6753026843070984,
+        0.6705520153045654
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\ns much \nhigher among people living with HIV, and among people \naffected by risk factors such as undernutrition, diabe -\ntes, smoking and alcohol consumption. \nPreventive treatment is available for people with \nTuberculosis (TB) is an old disease. Studies of human \nskeletons show that it has affected humans for thou -\nsands of years (1). Its cause remained unknown until 24 \nMarch 1882, when Dr Robert Koch announced his dis -\ncovery of the bacillus responsible, subsequently named \nMycobacterium tuberculosis  (2). The disease is spread \nwhen people who are sick with TB expel bacteria into \nthe air (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are mo\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\nd by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick with \nTB expel bacteria into the air (e.g.\u00a0by coughing). About \na quarter of the global population is estimated to have \nbeen infected with TB (3) . Following infection, the risk \nof developing TB disease is highest in the first 2 years \n(approximately 5%), after which it is much lower (4).\n2 \nSome people will clear the infection (5, 6) . Of the total \nnumber of people who develop TB disease each year, \nabout 90% are adults, with more cases among men than \nwomen. The disease typically affects the lungs (pulmo -\nnary TB) but can affect other sites as well. \nBasic facts about TB are provided in\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\nTB drugs (conducted \nbefore drug treatments became available) found that \nabout 70% of individuals with sputum smear-positive \npulmonary TB died within 10 years of being diagnosed, \nas did about 20% of people with culture-positive (but \nsmear-negative) pulmonary TB (4).\nEffective drug treatments were first developed in the \n1940s.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 47]\nreventive treatment, trials of \nthrice-weekly isoniazid and rifapentine for 1 month and \ntrials of rifamycin monotherapies for durations of 6 or 8 \nweeks.\nIn August 2024, there were 15 vaccine candidates in \nclinical trials: four in Phase I, five in Phase II and six in \nPhase III. They included candidates to prevent TB infec -\ntion and TB disease, and to help improve the outcomes \nof treatment for TB disease. \nEffective vaccines are critical to achieve annual glob -\nal and national reductions in TB incidence and mortality \nthat are much faster than those achieved historically. \nRecent high-level actions by WHO to support the devel -\nopment and implementation of new TB vaccines, as \nwell as other aspects of TB research and innovation, are \nsummarized in Table 4. \nWhen new evidence related t\n\n"
+    },
+    {
+      "id": "greeting",
+      "question": "Hello",
+      "retrieved_ids": [
+        [
+          397
+        ],
+        [
+          33
+        ],
+        [
+          43
+        ],
+        [
+          132
+        ],
+        [
+          47
+        ]
+      ],
+      "scores": [
+        0.5018324255943298,
+        0.496889591217041,
+        0.49620163440704346,
+        0.4957006275653839,
+        0.4941673278808594
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 65]\nForfurtherinformationpleasecontact:\nGlobalTuberculosisProgramme\nWorldHealthOrganization\n20,avenueAppia\nCH-1211Geneva27\nWeb:www.who.int/teams/global-tuberculosis-programme\nEmail:tbdata@who.int\nIt was a bright cold day in April, and the clocks were striking thirteen.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 9]\nash Zehaie.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 11]\nifa Samateh, Agbenyegan Samey, Tandaogo Saouadogo, Rufus Saye, Pascal Selemani, \nCebisile Shabangu, Hilarius Shilomboleni, Siene Tienabe, Armando Sifna, Bakary Sirageou, Nicholas Siziba, Glory \nThadei, Apal Toby, Daniel Tollo, Mariame Ti\u00e8ba Traore, Abdallahi Traor\u00e9, Mancoba Tsabedze, Stavia Turyahabwe, \nAdrien Ware, Mardemn Yeasuen, Amtatachew Moges Zegeye, Justine Zlahn.\nWHO Region of the Americas\nLeandra Abarca, Sarita Aguirre, Shalauddin Ahmed, Edwin Alexis Aizpurua, Antonieta Alarcon Guizado, Xochil Alem\u00e1n \nde Cruz, Gabriela Amaya, Gustavo Amor, Aisha Andrewin, Tiemi Arakawa, Dwain Archibald, Fabiola Arias Mu\u00f1oz, \nSandra Ariza Matiz, Nancy Ayala, Carlos Alberto Marcos Ayala Luna, Shalini Baldi, Wiedjaiperkash Balesar, Engels \nIlich Banegas, Jos\u00e9 Calderon-Squiabro, Beatriz Eugenia Casti\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 25]\n11\nFIG. 8\nEstimated number of people who developed MDR/RR-TB (incident cases) in 2023, for countries \nwith at least 1000 incident cases a \na The labels show the five countries that accounted for more than half of the global number of people estimated to have developed MDR/RR-TB in 2023.\nNumber of cases\n1 000\n10 000\n100 000\nIndia\nChina\nIndonesia\nPhilippines\nRussian Federation\nFIG. 9\nGlobal trends in the estimated number of deaths caused by TB (left) and the TB mortality rate \n(right),a 2010\u20132023 \nThe horizontal dashed line shows the 2025 milestone of the End TB strategy, which is a 75% reduction in the \ntotal number of TB deaths between 2015 and 2025. Shaded areas represent 95% uncertainty intervals.\na Deaths from TB among people with HIV are officially classified as deaths caused by HIV/AI\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 11]\na, Tania Samudio, \nKarla Mar\u00eda S\u00e1nchez Mendoza, Alejandra Silvestre Tuch Hibeb, Norberto Simboli, Nicola Skyers, Natalia Sosa, Angela \nStarks, Rebecca Stewart, Michelle Trotman, Melissa Valdez, Daniel V\u00e1zquez, Yohann White, Samuel Williams, Jennifer \nWilson, Haneef Wilson, Alesia Worgs, Jonathan Wortham, Oritta Zachariah, Cesar Zelaya.\nWHO Eastern Mediterranean Region\nOsman Muhyadin Abdulle, Eman Abo Saleem, Suhaib Abu Failat, Ihssane Aharrri, Shahnaz Ahmadi, Manal Al Daajani, \nAbdullatif Al Khal, Muna Yahya Alabed, Abdulasis Alagbari, Maha Alalawi, Nadia Al-Ani, Abeer Albalawi, Qatmeer \nAli Aldolabi, Kaltom Omar AlHami, Abdulbari Al-Hammadi, Omar Al-Jaff, Rofaida AlKady, Nada Almarzouqi, Zuhair \nAlsahoui, Ehab Al-Sakkaf, Layth Al-Salihi, Haya Alsanan, Mohamed Alsarraj, Haleema Alserehi, A\n\n"
+    },
+    {
+      "id": "unrelated",
+      "question": "How do I bake a chocolate cake?",
+      "retrieved_ids": [
+        [
+          768
+        ],
+        [
+          154
+        ],
+        [
+          515
+        ],
+        [
+          669
+        ],
+        [
+          780
+        ]
+      ],
+      "scores": [
+        0.5717161297798157,
+        0.5414153337478638,
+        0.5270484089851379,
+        0.511100172996521,
+        0.510162353515625
+      ],
+      "context": "[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 99]\nse. Give \n4-6 hours before dialysis.\nAdults Children*\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 28]\nration and Zimbabwe.\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 34]\ndence for the test \naccuracy. For patients who had completed their TB treatment within the \npast 5 years, WHO gave a weak recommendation because of the low \ncertainty of evidence.9\nOnly mycobacterial culture is able to differentiate live from dead \ntuberculous bacilli. Liquid media (BACTEC MGIT) for mycobacterial \nculture is the reference standard for bacteriological confirmation of \nTB.40 Furthermore, it can provide a faster result compared to solid \nmedia. Therefore, mycobacterial culture using BACTEC MGIT should \nbe sent for patients suspected of recurrent TB.\nRecommendation 12\n\u2022 Sputum should be sent for both Xpert Ultra and mycobacterial \nculture (BACTEC MGIT) for individuals suspected to have recurrent \npulmonary tuberculosis.\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 75]\nstrumental \nactivities of daily living (ADL)*\nGrade 3  Severe or medically significant but not immediately \nlife-threatening; hospitalisation or prolongation of \nhospitalisation indicated; disabling; limiting self-care \nADL**\nGrade 4  Life-threatening consequences; urgent intervention \nindicated\nGrade 5  Death related to adverse event\n*Instrumental ADL refer to preparing meals, shopping for groceries or clothes, using \nthe telephone, managing money, etc.\n**Self-care ADL refer to bathing, dressing and undressing, feeding self, using the \ntoilet, taking medications, and not bedridden.\n\u2022 Anti-tuberculosis cutaneous adverse drug reactions\nCutaneous ADRs are among the common ADRs due to anti-TB \ndrugs in clinical practice. Their features are diverse and non-specific. \nFurthermore, they may occu\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 103]\nPicture 1).\n4. Suction pressure used: \n\u2022 <12 months old: 80 - 100 mmHg/10 - 13 kPa\n\u2022 1 - 5 years old: 100 - 120 mmHg/13 - 16 kPa\n5. Measure the length of the suction tube by placing the end of the \ntube at the external opening of the ear and extend it to the tip of the \nnose (Picture 2). Mark the length on the tube.\n6. Instil two drops of sterile saline into each of the child\u2019s nostrils.\n7. Without applying suction, insert the tube through the nostril until the \nmarked length is reached. (similar to performing a nasal suction) \n8. Apply suction. \n9. Using a rotating movement, collect respiratory secretion by slowly \npulling out the tube. Do not push in the tube forward when aspirating \n10. Collection should be >1 ml.\n\n"
+    },
+    {
+      "id": "unsupported",
+      "question": "What is the opening time of my nearest TB clinic today?",
+      "retrieved_ids": [
+        [
+          397
+        ],
+        [
+          163
+        ],
+        [
+          68
+        ],
+        [
+          246
+        ],
+        [
+          177
+        ]
+      ],
+      "scores": [
+        0.6453099250793457,
+        0.6145608425140381,
+        0.6078386306762695,
+        0.6058349013328552,
+        0.6045396327972412
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 65]\nForfurtherinformationpleasecontact:\nGlobalTuberculosisProgramme\nWorldHealthOrganization\n20,avenueAppia\nCH-1211Geneva27\nWeb:www.who.int/teams/global-tuberculosis-programme\nEmail:tbdata@who.int\nIt was a bright cold day in April, and the clocks were striking thirteen.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 30]\nsed with TB \ncompared with the first study in 2017; estimates of TB \nincidence in 2023 based on use of capture\u2013recapture \nmethods are consistent with model-based estimates. 31 \nNational TB inventory studies are being planned in the \nPhilippines and Viet\u00a0Nam. \nAs of September 2024, there were 13 countries active-\nly interested in implementing a national TB prevalence \nsurvey: Bangladesh, Botswana, Ethiopia, Ghana, Indo -\nnesia, Malawi, Nigeria, Pakistan, Thailand, Uganda, the \nUnited Republic of Tanzania, Zambia and Zimbabwe.32 \nTB case notifications\nFurther rebound to new historic high in 2023\nGlobally in 2023, 8.2 million people were newly diag-\nnosed with TB and officially notified as a TB case. This \nis the highest number for a single year since WHO start -\ned to compile data from all c\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\ne, \nTB and pregnancy, and the 2023 national TB inventory study in \nIndonesia. \nTuberculosis (TB) is a preventable and usually curable \ndisease. Yet in 2023, TB probably returned to being the \nworld\u2019s leading cause of death from a single infectious \nagent, following 3 years in which it was replaced by \ncoronavirus disease (COVID-19),\n1 and caused almost \ntwice as many deaths as HIV/AIDS. More than 10\u00a0 mil -\nlion people continue to fall ill with TB every year and \nthe number has been rising since 2021. Urgent action \nis required to end the global TB epidemic by 2030, a \ngoal that has been adopted by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 43]\n29\nthat are catastrophic (defined as total costs exceeding \n20% of annual household income). The key differences \nbetween this TB-specific indicator and the SDG UHC \nindicator for household expenditures on health care \n(Indicator\u00a03.8.2) are explained in Box\u00a03.\nBetween 2015 and August 2024, a total of 37 coun -\ntries completed a national survey of costs faced by \npeople treated for TB and their households, of which \n35 (including 18 of the 30 high TB burden countries and \none of the three global TB watchlist countries) 55 have \nreported results. 56 First-ever surveys were completed in \nsix countries in the period 2023\u20132024: Argentina, Cam -\nbodia, the Congo, the Gambia, Nepal and Somalia. In \nAugust 2024, a repeat survey was ongoing in Viet\u00a0Nam, \n55 See Annex\u00a03 .\n56 Results from surveys in\n\n"
+    },
+    {
+      "id": "followup",
+      "question": "What about its side effects?",
+      "retrieved_ids": [
+        [
+          203
+        ],
+        [
+          466
+        ],
+        [
+          202
+        ],
+        [
+          798
+        ],
+        [
+          618
+        ]
+      ],
+      "scores": [
+        0.6383638381958008,
+        0.6383164525032043,
+        0.629112958908081,
+        0.6137410998344421,
+        0.6127739548683167
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 37]\ne per -\ncentage was \u226580% in the South-East Asia, European and \nWestern Pacific regions.\nAmong those tested in 2023, 159\u00a0 684 people with \nMDR/RR-TB and 28\u00a0982 people with pre-XDR-TB or XDR-\n43 One regimen consists of bedaquiline, pretomanid, linezolid and \nmoxifloxacin and is referred to as BPaLM. The other regimen \nconsists of bedaquiline, delamanid and linezolid, combined with \nlevofloxacin or clofazimine or both, as is referred to as BDLLfxC. \nUnlike BPaLM, the latter can be used in children and during \npregnancy. \nTABLE 3\nCumulative number of deaths averted by a) TB treatment as well as b) antiretroviral therapy \nfor people diagnosed with TB who were also living with HIV, 2010\u20132023 (in millions), globally \nand for WHO regions\nWHO REGION\nPEOPLE WITHOUT HIV PEOPLE WITH HIV\u1d43 TOTAL\nBEST ES\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 21]\nno difference in the following outcomes:18 - 19, level I\n\uf0a1 treatment failure and/or relapse\n\uf0a1 sputum smear conversion at end of treatment\n\uf0a1 adverse events leading to discontinuation of therapy\n\uf0a1 serious adverse events\n\uf0a1 acquired drug resistance\n\uf0a1 death\nThe risk of bias of primary studies in both meta-analyses were \nheterogeneous.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 37]\nuoroquinolones. \nThe third category includes longer regimens of 18\u201320 \nmonths that may include an injectable drug (amikacin). \nThe 6-month regimens are prioritized for use while the \nlongest regimens are a last resort. \nGlobally in 2023, 79% of people (3.4/4.3 million) \ndiagnosed with bacteriologically confirmed pulmonary \nTB were tested for rifampicin resistance, up from 73% \n(2.9/4.0\u00a0 million) in 2022, 69% (2.4/3.5\u00a0 million) in 2021 \nand considerably better that the pre-pandemic level \nof 62% (2.2/3.6\u00a0 million) in 2019 ( Fig. 25 ). There were \nimprovements in all six WHO regions; in 2023, the per -\ncentage was \u226580% in the South-East Asia, European and \nWestern Pacific regions.\nAmong those tested in 2023, 159\u00a0 684 people with \nMDR/RR-TB and 28\u00a0982 people with pre-XDR-TB or XDR-\n43 One reg\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 110]\nens\nEthinyl estradiol, Estradiol,\nEstriol\nRifamycins \u2193 estrogens Be careful when combining drugs \nAlternative forms of contraception should \nbe used during and for four weeks after \ncompletion of rifamycin therapy\nBe careful when combining drugs \nAlternative forms of contraception should \nbe used during and for four weeks after \ncompletion of rifamycin therapy\nCategory of drugs Type of drugs Interactions Suggestions\nProgestogens\nCyproterone, Desogestrel, \nDienogest, Drospirenone, \nDydrogesterone, Ethisterone, \nEtonogestrel, Gestodene,\nRifamycins \u2193 progestogens\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 62]\nical symptom: current cough, fever, weight loss or night sweats\n\n"
+    }
+  ]
+}

@@ -1,0 +1,268 @@
+{
+  "model": "multiset",
+  "device": "cpu",
+  "generated_answers": false,
+  "examples": [
+    {
+      "id": "symptoms",
+      "question": "What are the symptoms of tuberculosis?",
+      "retrieved_ids": [
+        [
+          317
+        ],
+        [
+          542
+        ],
+        [
+          549
+        ],
+        [
+          69
+        ],
+        [
+          776
+        ]
+      ],
+      "scores": [
+        0.7286216020584106,
+        0.6943886876106262,
+        0.6803911924362183,
+        0.6766259670257568,
+        0.6744468808174133
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\ns much \nhigher among people living with HIV, and among people \naffected by risk factors such as undernutrition, diabe -\ntes, smoking and alcohol consumption. \nPreventive treatment is available for people with \nTuberculosis (TB) is an old disease. Studies of human \nskeletons show that it has affected humans for thou -\nsands of years (1). Its cause remained unknown until 24 \nMarch 1882, when Dr Robert Koch announced his dis -\ncovery of the bacillus responsible, subsequently named \nMycobacterium tuberculosis  (2). The disease is spread \nwhen people who are sick with TB expel bacteria into \nthe air (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are mo\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 42]\n26\nManagement of Tuberculosis (Fourth Edition)\n\u2022 Immune Reconstitution Inflammatory Syndrome\nIRIS is an augmented inflammatory response in patients commenced \non ART and anti-TB. It may cause clinical deterioration but does not \nprimarily contribute to mortality.\nWhile early initiation of ART in HIV-TB co-infection reduces all-cause \nmortality, it may also lead to IRIS which usually occurs within three \nmonths of TB treatment, typically within two to twelve weeks after the \ninitiation of ART. \nThe major manifestations of IRIS are fever (40%), followed by \nlymphadenitis (38%).8\nEPTB is the most significant risk factor associated with the emergence \nof IRIS. Other risk factors include baseline haemoglobin <100 g/L \n(OR=2.2, 95% CI 1.1 to 4.6) and baseline CD4 count <50 cells/mm 3 \n(OR=4.1. 9\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 44]\n28\nManagement of Tuberculosis (Fourth Edition)\na. Diagnosis\nThe expert consensus case definition classifies intrathoracic TB in \nchildren into the following categories:55, level III\nTB=tuberculosis, CXR=chest radiograph, TST=tuberculin skin test, IGRA=interferon \ngamma release assay\n*Unconfirmed TB: Clinically-diagnosed TB\nCXR findings in children can be non-specific. Primary PTB findings \ninclude perihilar lymphadenopathy which is often missed by \ninexperienced clinicians. Post-primary PTB changes are not common in \nchildren. Absence of these changes do not exclude TB in children. Refer \nto Appendix 8 on Chest Radiograph Changes for Tuberculosis in \nChildren.\nA good prospective cohort study using Xpert Ultra on 535 children \ndemonstrated that induced sputum (IS) specimen was more sensitiv\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\nd by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick with \nTB expel bacteria into the air (e.g.\u00a0by coughing). About \na quarter of the global population is estimated to have \nbeen infected with TB (3) . Following infection, the risk \nof developing TB disease is highest in the first 2 years \n(approximately 5%), after which it is much lower (4).\n2 \nSome people will clear the infection (5, 6) . Of the total \nnumber of people who develop TB disease each year, \nabout 90% are adults, with more cases among men than \nwomen. The disease typically affects the lungs (pulmo -\nnary TB) but can affect other sites as well. \nBasic facts about TB are provided in\n\n"
+    },
+    {
+      "id": "transmission",
+      "question": "How is tuberculosis transmitted?",
+      "retrieved_ids": [
+        [
+          317
+        ],
+        [
+          69
+        ],
+        [
+          68
+        ],
+        [
+          782
+        ],
+        [
+          548
+        ]
+      ],
+      "scores": [
+        0.6824684739112854,
+        0.6544210910797119,
+        0.6356710195541382,
+        0.6323747634887695,
+        0.629379153251648
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\ns much \nhigher among people living with HIV, and among people \naffected by risk factors such as undernutrition, diabe -\ntes, smoking and alcohol consumption. \nPreventive treatment is available for people with \nTuberculosis (TB) is an old disease. Studies of human \nskeletons show that it has affected humans for thou -\nsands of years (1). Its cause remained unknown until 24 \nMarch 1882, when Dr Robert Koch announced his dis -\ncovery of the bacillus responsible, subsequently named \nMycobacterium tuberculosis  (2). The disease is spread \nwhen people who are sick with TB expel bacteria into \nthe air (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are mo\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\nd by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick with \nTB expel bacteria into the air (e.g.\u00a0by coughing). About \na quarter of the global population is estimated to have \nbeen infected with TB (3) . Following infection, the risk \nof developing TB disease is highest in the first 2 years \n(approximately 5%), after which it is much lower (4).\n2 \nSome people will clear the infection (5, 6) . Of the total \nnumber of people who develop TB disease each year, \nabout 90% are adults, with more cases among men than \nwomen. The disease typically affects the lungs (pulmo -\nnary TB) but can affect other sites as well. \nBasic facts about TB are provided in\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\ne, \nTB and pregnancy, and the 2023 national TB inventory study in \nIndonesia. \nTuberculosis (TB) is a preventable and usually curable \ndisease. Yet in 2023, TB probably returned to being the \nworld\u2019s leading cause of death from a single infectious \nagent, following 3 years in which it was replaced by \ncoronavirus disease (COVID-19),\n1 and caused almost \ntwice as many deaths as HIV/AIDS. More than 10\u00a0 mil -\nlion people continue to fall ill with TB every year and \nthe number has been rising since 2021. Urgent action \nis required to end the global TB epidemic by 2030, a \ngoal that has been adopted by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 104]\n88\nManagement of Tuberculosis (Fourth Edition)\n     Picture 1: Mucus extractor  Picture 2: Measuring correct  \n           length of suction tube\nAdapted: \n1. Ministry of Health, Malaysia. Management of Tuberculosis (Third Edition). \nPutrajaya MoH; 2012\n2. Universite de Bordeaux. TB Speed Nasopharyngeal Aspirate (NPA) Collection. \n(Available at: http://www.tb-speed.com/wp-content/uploads/2020/09/TB-Speed_\nSOP_NPA.pdf)\n\n"
+    },
+    {
+      "id": "latent",
+      "question": "What is the difference between latent TB infection and active TB disease?",
+      "retrieved_ids": [
+        [
+          69
+        ],
+        [
+          548
+        ],
+        [
+          317
+        ],
+        [
+          183
+        ],
+        [
+          127
+        ]
+      ],
+      "scores": [
+        0.6771737933158875,
+        0.675264835357666,
+        0.6745542287826538,
+        0.6709931492805481,
+        0.6695582270622253
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 15]\nd by all Member States of the \nUnited Nations (UN) and the World Health Organization \n(WHO) (1, 2).\nTB is caused by the bacillus Mycobacterium tubercu -\nlosis, which is spread when people who are sick with \nTB expel bacteria into the air (e.g.\u00a0by coughing). About \na quarter of the global population is estimated to have \nbeen infected with TB (3) . Following infection, the risk \nof developing TB disease is highest in the first 2 years \n(approximately 5%), after which it is much lower (4).\n2 \nSome people will clear the infection (5, 6) . Of the total \nnumber of people who develop TB disease each year, \nabout 90% are adults, with more cases among men than \nwomen. The disease typically affects the lungs (pulmo -\nnary TB) but can affect other sites as well. \nBasic facts about TB are provided in\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 43]\nNon-HIV infected household contacts: any cough, fever, night \nsweats, haemoptysis, weight loss, chest pain, shortness of breath \nor fatigue. In children <5 years old, it should also include anorexia, \nfailure to thrive, poor feeding, decrease activities or playfulness.\nii. Children living with HIV <10 years old: any current cough, fever, \nhistory of contact with TB, reported weight loss, confirmed weight \nloss >5% since last visit or growth curve flattening or weight for \nage < -2 Z-scores.\niii. Children living with HIV \u226510 years old: any current cough, fever, \nweight loss or night sweats.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\ns much \nhigher among people living with HIV, and among people \naffected by risk factors such as undernutrition, diabe -\ntes, smoking and alcohol consumption. \nPreventive treatment is available for people with \nTuberculosis (TB) is an old disease. Studies of human \nskeletons show that it has affected humans for thou -\nsands of years (1). Its cause remained unknown until 24 \nMarch 1882, when Dr Robert Koch announced his dis -\ncovery of the bacillus responsible, subsequently named \nMycobacterium tuberculosis  (2). The disease is spread \nwhen people who are sick with TB expel bacteria into \nthe air (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are mo\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 34]\n20  Global tuberculosis report 2024\nto 6.8% of the 6.4 million people newly diagnosed with \nTB who had an HIV test result. Overall, the percentage of \npeople newly diagnosed with TB who had an HIV-posi -\ntive test result has fallen globally over the past 10 years.\nTB treatment coverage \nPost-COVID recovery but sizeable gaps remain \nThe 2025 milestone and 2030/2035 targets of the End TB \nStrategy can only be achieved if everyone who develops \nTB disease is promptly diagnosed and then treated with \ndrug regimens recommended by WHO (22, 23).38 \nThere is still a sizeable gap between the estimated \nnumber of people who develop TB each year (incident \ncases) and the number of people newly diagnosed with \nTB and officially reported as a TB case ( Fig. 16, Fig. 17). \nThis reflects both underdiagno\n\n"
+    },
+    {
+      "id": "diagnosis",
+      "question": "How is pulmonary tuberculosis diagnosed?",
+      "retrieved_ids": [
+        [
+          317
+        ],
+        [
+          776
+        ],
+        [
+          619
+        ],
+        [
+          174
+        ],
+        [
+          333
+        ]
+      ],
+      "scores": [
+        0.6740176677703857,
+        0.652642548084259,
+        0.6462463736534119,
+        0.6451225280761719,
+        0.6440403461456299
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\ns much \nhigher among people living with HIV, and among people \naffected by risk factors such as undernutrition, diabe -\ntes, smoking and alcohol consumption. \nPreventive treatment is available for people with \nTuberculosis (TB) is an old disease. Studies of human \nskeletons show that it has affected humans for thou -\nsands of years (1). Its cause remained unknown until 24 \nMarch 1882, when Dr Robert Koch announced his dis -\ncovery of the bacillus responsible, subsequently named \nMycobacterium tuberculosis  (2). The disease is spread \nwhen people who are sick with TB expel bacteria into \nthe air (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are mo\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 102]\n86\nManagement of Tuberculosis (Fourth Edition)\nAPPENDIX 8\nCHEST RADIOGRAPH CHANGES FOR TUBERCULOSIS\nIN CHILDREN\nFig. 1: Chest radiographs in a 5-year-old girl with primary tuberculous \ndisease. Anteroposterior (a) and lateral (b) views show a middle lobe \nopacity (*) with right hilar lymphadenopathy (\uf0e0).\nFig. 2: Chest radiographs in a 1-year-old boy with primary tuberculous \ndisease and lymphadenopathy. Anteroposterior (a) and lateral (b) views \nshow hilar lymphadenopathy (\uf0e0) on the right without ipsilateral lung \nabnormality. A left retrocardiac opacity (*) is noted.\nSource: Concepcion NDP, Laya BF, Andronikou S, et al. Standardized radiographic \ninterpretation of thoracic tuberculosis in children. Pediatr Radiol. \n2017;47(10):1237-1248\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 63]\n47\nManagement of Tuberculosis (Fourth Edition)\nAdapted: World Health Organization. WHO Consolidated Guidelines on Tuberculosis: Tuberculosis Preventive Treatment: Module 1: Prevention. Geneva: World Health Organization; 2020\nFigure 5: LTBI testing and TB preventive treatment for people living with HIV (PLHIV)                            \nYES\nNO\nDefer LTBI\ntreatment \nGive LTBI\ntreatment \nPOSITIVE/NEGATIVE/UNAVAILABLE\nYES NO\nPreventive treatment contraindicated?\nFollow-up for progression to active TB, except for individuals who tested negative for IGRA\n*Close contacts are individuals who live in the same household or share the same air space with an index case for a reasonable duration of time\nbefore the index patient started TB treatment. \u2020Clinical symptom: current cough, fever, weight loss\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 32]\nrectly diag-\nnosed and ensures that the most effective treatment \nregimen (depending on the pattern of drug resistance) \ncan be selected as early as possible. People diagnosed \nwith TB in the absence of bacteriological confirmation \nare classified as \u201cclinically diagnosed\u201d cases of TB.\nIn many countries, there is a need to increase the per-\ncentage of people diagnosed with pulmonary TB based \non bacteriological confirmation. \nOf the 6.9\u00a0million people diagnosed with pulmonary \nTB worldwide in 2023, 62% were bacteriologically con -\nfirmed (Fig.\u00a018), similar to 2022 (63%), following a steady \nimprovement from 55% in 2018. \n33 Further details are provided in the report webpages (section 2.1).\n34 Previously, these two countries were also the main contributors \nto the large global increase in T\n\n"
+    },
+    {
+      "id": "treatment",
+      "question": "What treatments are used for drug-resistant tuberculosis?",
+      "retrieved_ids": [
+        [
+          317
+        ],
+        [
+          199
+        ],
+        [
+          464
+        ],
+        [
+          315
+        ],
+        [
+          121
+        ]
+      ],
+      "scores": [
+        0.7018938064575195,
+        0.6965410709381104,
+        0.6928653120994568,
+        0.6839818954467773,
+        0.6801220774650574
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\ns much \nhigher among people living with HIV, and among people \naffected by risk factors such as undernutrition, diabe -\ntes, smoking and alcohol consumption. \nPreventive treatment is available for people with \nTuberculosis (TB) is an old disease. Studies of human \nskeletons show that it has affected humans for thou -\nsands of years (1). Its cause remained unknown until 24 \nMarch 1882, when Dr Robert Koch announced his dis -\ncovery of the bacillus responsible, subsequently named \nMycobacterium tuberculosis  (2). The disease is spread \nwhen people who are sick with TB expel bacteria into \nthe air (e.g. by coughing). TB typically affects the lungs \n(pulmonary TB) but can also affect other sites (extrapul-\nmonary TB). Most people who develop the disease \n(about 90%) are adults and there are mo\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 37]\nmbined total for the period 2000\u20132023 was 79 million. \nDrug-resistant TB: diagnosis and treatment\nDiagnostic gaps, improving treatment outcomes\nWHO uses five categories to classify cases of drug- \nresistant TB: \n \u25b6 isoniazid-resistant TB; \n \u25b6 RR-TB (defined above); \n \u25b6 MDR-TB (defined above); \n \u25b6 pre-extensively drug-resistant TB (pre-XDR-TB), \ndefined as TB that is resistant to rifampicin and any \nfluoroquinolone (a class of second-line anti-TB drug); \nand \n \u25b6 XDR-TB, defined as TB that is resistant to rifampicin, \nplus any fluoroquinolone, plus at least one of either \nbedaquiline or linezolid. \n42 Since 2021, WHO has requested data on treatment outcomes \ndisaggregated by sex from the 49 countries in one of the three \nlists of high burden countries ( Annex 3). The countries from \nwhich su\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 21]\nDosage and Adverse Drug Reactions.\nRecommendation 3\n\u2022 Standard anti-tuberculosis regimen of 2EHRZ/4HR* should be used \nin the treatment of pulmonary tuberculosis.\n\uf0a1 Pyridoxine 10 mg/day should be given to patients on isoniazid. \nThose with high risk of neuropathy** should be given pyridoxine \n30 mg/day.\n*Two months of ethambutol, isoniazid, rifampicin and pyrazinamide followed by four \nmonths of isoniazid and rifampicin.\n**Those at high risk of isoniazid induced neuropathy including pregnant women, \nPLHIV, elderly patients, patients with diabetes, alcoholism, malnutrition or chronic \nrenal failure.\n\u2022 Fixed-dose combination of anti-tuberculosis treatment\nFixed-dose combination (FDC) tablets are combinations of two or \nmore anti-TB drugs in a tablet. They have been available since the \n1980s\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\nh \nregimens. Nationally, treatment success rates for RR-TB \nreported to date have typically been in the range of \n50\u201375%; the global average has been improving in recent \nyears, reaching 68% in the most recent annual cohort of \npeople enrolled on treatment for which data are avail -\nable (2022). This may further improve with expanded \nuse of the two 6-month regimens; for example, clinical \ntrial data showed a treatment success rate of 89% for \none of these regimens (8) . Treatment for extensively \ndrug-resistant TB (XDR-TB, defined as resistance to R, \nany fluoroquinolone and at least one of bedaquiline or \nlinezolid) remains much more difficult and treatment \nsuccess rates are typically low.\nA global modelling study published in 2016 esti -\nmated that about a quarter of the world\u2019s popula\n\n"
+    },
+    {
+      "id": "greeting",
+      "question": "Hello",
+      "retrieved_ids": [
+        [
+          47
+        ],
+        [
+          9
+        ],
+        [
+          26
+        ],
+        [
+          43
+        ],
+        [
+          36
+        ]
+      ],
+      "scores": [
+        0.48601675033569336,
+        0.48490938544273376,
+        0.4834035336971283,
+        0.4777536988258362,
+        0.47725552320480347
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 11]\na, Tania Samudio, \nKarla Mar\u00eda S\u00e1nchez Mendoza, Alejandra Silvestre Tuch Hibeb, Norberto Simboli, Nicola Skyers, Natalia Sosa, Angela \nStarks, Rebecca Stewart, Michelle Trotman, Melissa Valdez, Daniel V\u00e1zquez, Yohann White, Samuel Williams, Jennifer \nWilson, Haneef Wilson, Alesia Worgs, Jonathan Wortham, Oritta Zachariah, Cesar Zelaya.\nWHO Eastern Mediterranean Region\nOsman Muhyadin Abdulle, Eman Abo Saleem, Suhaib Abu Failat, Ihssane Aharrri, Shahnaz Ahmadi, Manal Al Daajani, \nAbdullatif Al Khal, Muna Yahya Alabed, Abdulasis Alagbari, Maha Alalawi, Nadia Al-Ani, Abeer Albalawi, Qatmeer \nAli Aldolabi, Kaltom Omar AlHami, Abdulbari Al-Hammadi, Omar Al-Jaff, Rofaida AlKady, Nada Almarzouqi, Zuhair \nAlsahoui, Ehab Al-Sakkaf, Layth Al-Salihi, Haya Alsanan, Mohamed Alsarraj, Haleema Alserehi, A\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 4]\nZorica Nanovic, Valeriu \nNegre, Anne Negre, Cholpon Nurgazieva, \n \n \n \n \n \nThis correction has been incorporated into the electronic file.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 9]\nmimi and Peter Dodd.  \nThe data and other content provided in the mobile \napp that accompanies the report were prepared by \nKatherine Floyd, Irwin Law and Hazim Timimi. The app \nwas first developed by the WHO Global Tuberculosis \nProgramme in collaboration with Adappt in 2019 and \nhas subsequently been maintained by Adappt through -\nout the year and then updated on an annual basis. The \nreport team is very appreciative of the excellent work \ndone by Adappt. \nWeb-based versions of global, regional and country \nprofiles were prepared by Hazim Timimi. \nThe report team is grateful to various WHO staff out -\nside the WHO Global Tuberculosis Programme for their \nuseful comments and advice on advanced drafts of \nreport content. Particular thanks are due to Bochen Cao \nand Wahyu Retno (Annet) Maha\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 11]\nifa Samateh, Agbenyegan Samey, Tandaogo Saouadogo, Rufus Saye, Pascal Selemani, \nCebisile Shabangu, Hilarius Shilomboleni, Siene Tienabe, Armando Sifna, Bakary Sirageou, Nicholas Siziba, Glory \nThadei, Apal Toby, Daniel Tollo, Mariame Ti\u00e8ba Traore, Abdallahi Traor\u00e9, Mancoba Tsabedze, Stavia Turyahabwe, \nAdrien Ware, Mardemn Yeasuen, Amtatachew Moges Zegeye, Justine Zlahn.\nWHO Region of the Americas\nLeandra Abarca, Sarita Aguirre, Shalauddin Ahmed, Edwin Alexis Aizpurua, Antonieta Alarcon Guizado, Xochil Alem\u00e1n \nde Cruz, Gabriela Amaya, Gustavo Amor, Aisha Andrewin, Tiemi Arakawa, Dwain Archibald, Fabiola Arias Mu\u00f1oz, \nSandra Ariza Matiz, Nancy Ayala, Carlos Alberto Marcos Ayala Luna, Shalini Baldi, Wiedjaiperkash Balesar, Engels \nIlich Banegas, Jos\u00e9 Calderon-Squiabro, Beatriz Eugenia Casti\n\n"
+    },
+    {
+      "id": "unrelated",
+      "question": "How do I bake a chocolate cake?",
+      "retrieved_ids": [
+        [
+          768
+        ],
+        [
+          779
+        ],
+        [
+          313
+        ],
+        [
+          743
+        ],
+        [
+          576
+        ]
+      ],
+      "scores": [
+        0.5208708047866821,
+        0.498169481754303,
+        0.49275535345077515,
+        0.4896140992641449,
+        0.4873865842819214
+      ],
+      "context": "[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 99]\nse. Give \n4-6 hours before dialysis.\nAdults Children*\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 103]\npare the child and required equipment for nasogastric tube \ninsertion.     \n2. Attach a syringe to the nasogastric tube.\n3. Aspirate 2 - 5 ml of gastric contents.\n4. If no fluid is aspirated, instil 5 - 10 ml sterile water or normal saline \nand repeat aspiration.\n5. Transfer the gastric aspirate from the syringe into a sterile sputum \ncontainer.\nNasopharyngeal Aspiration \n1. Fasting is not necessary prior to nasopharyngeal aspiration.\n2. Position the child on his/her back or side. Restrain the child by \nwrapping him/her in a piece of cloth.\n3. Prepare the suction machine and mucous extractor (Picture 1).\n4. Suction pressure used: \n\u2022 <12 months old: 80 - 100 mmHg/10 - 13 kPa\n\u2022 1 - 5 years old: 100 - 120 mmHg/13 - 16 kPa\n5. Measure the length of the suction tube by placing the end of the \ntu\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 53]\n39\nANNEX 1\nBasic facts about TB\nThe latest WHO treatment guidelines (5)  include \na strong recommendation for a 6-month regimen of \nisoniazid (H), rifampicin (R), ethambutol (E) and pyrazi -\nnamide (Z) for people with drug-susceptible TB (both \npulmonary and extrapulmonary): all four drugs for the \nfirst two months, followed by H and R for the remaining \n4 months. They also include newer recommendations \nthat people aged 12 years and older with drug-sus -\nceptible pulmonary TB may be treated with a 4-month \nregimen of rifapentine (P), H, Z and moxifloxacin (M), \nand that children and adolescents between 3 months \nand 16 years of age with non-severe TB (and without \nsuspicion or evidence of resistance to R and H) may be \ntreated with a 4-month regimen (2 months of H, R, Z \nand sometimes als\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 92]\nslami R, et al. Safety and side effects of rifampin \nversus isoniazid in children. N Engl J Med. 2018;379(5):454-63.\n99. Villarino ME, Scott NA, Weis SE, et al. Treatment for preventing tuberculosis \nin children and adolescents: a randomized clinical trial of a 3-month, 12-\ndose regimen of a combination of rifapentine and isoniazid. JAMA Pediatr. \n2015;169(3):247-55.\n100. Gaensbauer J, Aiona K, Haas M, et al. Better completion of pediatric latent \ntuberculosis treatment using 4 months of rifampin in a US-based tuberculosis \nclinic. Pediatr Infect Dis J. 2018;37(3):224-8.\n101. Tostmann A, Boeree MJ, Aarnoutse RE, et al. Antituberculosis drug-\ninduced hepatotoxicity: concise up-to-date review. J Gastroenterol Hepatol. \n2008;23(2):192-202.\n102. World Health Organization. The use of the WHO-UM\n\n"
+    },
+    {
+      "id": "unsupported",
+      "question": "What is the opening time of my nearest TB clinic today?",
+      "retrieved_ids": [
+        [
+          190
+        ],
+        [
+          333
+        ],
+        [
+          8
+        ],
+        [
+          127
+        ],
+        [
+          175
+        ]
+      ],
+      "scores": [
+        0.6199216842651367,
+        0.6005926728248596,
+        0.595041811466217,
+        0.5865426659584045,
+        0.585002601146698
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 35]\nification data reflect some level of over-diagno -\nsis of TB; for example, the proportion of notified cases \ndiagnosed based on bacteriological confirmation in \n2023 was less than 50% in Mozambique and Papua New  \nGuinea. \nFour high TB burden countries had particularly low \nlevels of treatment coverage in 2023, with best esti -\nmates of less than 50%:\u00a0Lesotho, Liberia, Mongolia and \nMyanmar.\n41 Further details are provided in the report webpages (section 2.3).\nFIG. 21 \nGlobal trend in TB treatment coverage, a \n2010\u20132023\nThe shaded area represents the 95% uncertainty \ninterval.\na Notifications of people with a new or relapse episode of TB as a \npercentage of estimated incident TB cases, in the same year.\n2010 2013 2015 2017 2019 2021 2023\n0\n25\n75\n100Treatment coverage (%)\n50\nTarget for 2027\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 55]\ne; TB infection control; engagement of all public \nand private care providers in TB prevention and care; \ncommunity engagement; specific elements of the WHO \nmultisectoral accountability framework for TB; budg-\nets of national TB programmes (NTPs); use of general \nhealth services (hospitalization and outpatient visits) \nduring treatment; and NTP expenditures. A shortened \nversion of the questionnaire was used for high-income \ncountries as defined by the World Bank 1 or low-inci -\ndence countries, defined as countries with an incidence \nrate of <20 cases per 100 000 population or <10 cases in \ntotal in 2022.\nHigh TB burden countries and selected other regional \npriority countries were also asked to continue reporting \nmonthly or quarterly provisional notification data. This \nprocess started\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 4]\nCORRIGENDUM (25 November 2024) \n \nGlobal tuberculosis report 2024 \n \nISBN 978-92-4-010153-1 (electronic version) \nISBN 978-92-4-010154-8 (print version) \n \n \nPage x, lines 51 under \u201cWHO European Region\u201d \n \nDelete:  Nurgazieva, \n \nInsert:  Karlygash Kasymbekova, Guljamol Kasymova, Anush Khachatryan, \nNaira Khachatryan, \u0160pela Klemen, Dzmitry Klimuk, Anders Koch, \nBlerina Kodra, Fiona Koeltringer, Maria Korzeniewska-Kose\u0142a, Stefan \nKroger, Tiina Kummik, Xhevat Kurhasani, Stevan Lu\u010di\u0107, Philipp \nLudin, Inna Mammadova, Tanya Melillo, Donika Mema, Peace \nMpakaniye, Edibe Nurzen Naml\u0131 Bozkurt, Zorica Nanovic, Valeriu \nNegre, Anne Negre, Cholpon Nurgazieva, \n \n \n \n \n \nThis correction has been incorporated into the electronic file.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 24]\nruptions to TB diagnosis and \ntreatment in 2020 and 2021 (Fig. 9).17 \nGlobally in 2023, TB caused an estimated 1.25 million \ndeaths (95%\u00a0UI:\u00a01.13\u20131.37 million), including 1.09 million \namong HIV-negative people (95% UI: 0.98\u20131.20 million) \nand 161\u00a0000 among people with HIV (95% UI: 132\u00a0000\u2013\n193\u00a0000).18 This total was down from estimates of 1.32 \nmillion (95% UI: 1.21\u20131.45 million) in 2022, 1.42 million \n(95% UI: 1.29\u20131.55 million) in 2021 and 1.40 million \n(95% UI: 1.27\u20131.54 million) in 2020; it was also below the \npre-pandemic level of 1.34 million (95% UI: 1.22\u20131.46 \nmillion) in 2019.  \nCOVID-related disruptions are estimated to have \nresulted in almost 700\u00a0000 excess deaths from TB in the \n4 years 2020\u20132023, 19 compared with the number that \nwould have occurred if pre-pandemic trends ha\n\n"
+    },
+    {
+      "id": "followup",
+      "question": "What about its side effects?",
+      "retrieved_ids": [
+        [
+          203
+        ],
+        [
+          202
+        ],
+        [
+          285
+        ],
+        [
+          201
+        ],
+        [
+          410
+        ]
+      ],
+      "scores": [
+        0.6245290040969849,
+        0.6149231791496277,
+        0.6110014319419861,
+        0.6092091202735901,
+        0.6078434586524963
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 37]\ne per -\ncentage was \u226580% in the South-East Asia, European and \nWestern Pacific regions.\nAmong those tested in 2023, 159\u00a0 684 people with \nMDR/RR-TB and 28\u00a0982 people with pre-XDR-TB or XDR-\n43 One regimen consists of bedaquiline, pretomanid, linezolid and \nmoxifloxacin and is referred to as BPaLM. The other regimen \nconsists of bedaquiline, delamanid and linezolid, combined with \nlevofloxacin or clofazimine or both, as is referred to as BDLLfxC. \nUnlike BPaLM, the latter can be used in children and during \npregnancy. \nTABLE 3\nCumulative number of deaths averted by a) TB treatment as well as b) antiretroviral therapy \nfor people diagnosed with TB who were also living with HIV, 2010\u20132023 (in millions), globally \nand for WHO regions\nWHO REGION\nPEOPLE WITHOUT HIV PEOPLE WITH HIV\u1d43 TOTAL\nBEST ES\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 37]\nuoroquinolones. \nThe third category includes longer regimens of 18\u201320 \nmonths that may include an injectable drug (amikacin). \nThe 6-month regimens are prioritized for use while the \nlongest regimens are a last resort. \nGlobally in 2023, 79% of people (3.4/4.3 million) \ndiagnosed with bacteriologically confirmed pulmonary \nTB were tested for rifampicin resistance, up from 73% \n(2.9/4.0\u00a0 million) in 2022, 69% (2.4/3.5\u00a0 million) in 2021 \nand considerably better that the pre-pandemic level \nof 62% (2.2/3.6\u00a0 million) in 2019 ( Fig. 25 ). There were \nimprovements in all six WHO regions; in 2023, the per -\ncentage was \u226580% in the South-East Asia, European and \nWestern Pacific regions.\nAmong those tested in 2023, 159\u00a0 684 people with \nMDR/RR-TB and 28\u00a0982 people with pre-XDR-TB or XDR-\n43 One reg\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 48]\nns on targeted next-generation sequencing were published as part of updated guidelines on \nTB diagnostics and an associated operational handbook (20, 54) . \nIn April, a recommendation for the co-administration of treatment for MDR/RR-TB and hepatitis C was released (55) . \nIn May, consolidated guidelines and an accompanying handbook on TB and comorbidities were published, which \ninclude content about HIV and mental health (56, 57) . \nIn August, updates to treatment recommendations for people with MDR/RR-TB were announced; these include a new \n6-month regimen composed of bedaquiline, delamanid and linezolid, combined with levofloxacin or clofazimine \nor both, as well as options for 9-month regimens for people with MDR/RR-TB who do not have resistance to \nfluoroquinolones (28). \nIn September\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 37]\nequencing technologies. \nSince 2018, WHO has recommended all-oral reg-\nimens for the treatment of MDR/RR-TB, a landmark \nadvance compared with previous regimens that includ -\ned injectable agents (26) . The latest recommendations \nfor treatment of drug-resistant TB include three major \ncategories of regimen (27, 28). The first category consists \nof two 6-month all-oral regimens for people with MDR/\nRR-TB (with or without resistance to fluoroquinolo -\nnes).43 The second category includes several all-oral \nshort regimens of 9 months for people with MDR/RR-TB \nwho do not have any resistance to fluoroquinolones. \nThe third category includes longer regimens of 18\u201320 \nmonths that may include an injectable drug (amikacin). \nThe 6-month regimens are prioritized for use while the \nlongest regimens\n\n"
+    }
+  ]
+}

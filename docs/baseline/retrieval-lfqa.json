@@ -1,0 +1,268 @@
+{
+  "model": "lfqa",
+  "device": "cpu",
+  "generated_answers": false,
+  "examples": [
+    {
+      "id": "symptoms",
+      "question": "What are the symptoms of tuberculosis?",
+      "retrieved_ids": [
+        [
+          618
+        ],
+        [
+          792
+        ],
+        [
+          689
+        ],
+        [
+          48
+        ],
+        [
+          50
+        ]
+      ],
+      "scores": [
+        0.1698783040046692,
+        0.16463731229305267,
+        0.15744644403457642,
+        0.14814868569374084,
+        0.1426633894443512
+      ],
+      "context": "[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 62]\nical symptom: current cough, fever, weight loss or night sweats\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 107]\noat \nbottle like below to \ndissolve antigen on \ntube walls\nShake 10x\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 80]\nrug interactions may lead to \nadverse events because of/resulting from the reduction in efficacy or \nthe increase in toxicity of the affected drug. Popular drug interaction \ndatabases, such as Micromedex and Lexicomp provide searchable\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 11]\nldolabi, Kaltom Omar AlHami, Abdulbari Al-Hammadi, Omar Al-Jaff, Rofaida AlKady, Nada Almarzouqi, Zuhair \nAlsahoui, Ehab Al-Sakkaf, Layth Al-Salihi, Haya Alsanan, Mohamed Alsarraj, Haleema Alserehi, Awatef Alshammeri, \nKifah AlShaqeldi, Khalsa Al-Thulhli, Amin bin Ali Al-Toumi, Fatma Alyaquobi, Wagdy Amin, Hashim Khan Amirzadah, \nMohamed Belkahla, Imane Chelloufi, Joanne Daghfal, Driss Daoudi, Mohammad Zaher Dildar, Malika El Ouahabi, \nRazia Fatima, Mohamed Furjani, Sara Elhadi Gempi, Hammad Habib, Rasheeda Hamid, Diaa Hjaija, James Hirbo, \nMaryam Karimian, Ibrahim Maia, Khan Mohammad Mangal, Ahmed Mankhi, Badeeha Mansoor, Abderraouf Mansouri, \nAfaf Mohamed, Hamdan Mustafa, Mahshid Nasehi, Yassir Piro, Najia Abdosalam Rasheed, Salma Saad, Radia Sabouni, \nIssa Salha, Muhammad Zia Samad, Ema\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 11]\non Cox, Manfred Danilovi\u0161, Edita Davidaviciene, \nTeresa Domaszewska, Yves Dupont, Adrien Esclade, Lanfranco Fattorini, Margaret Fitzgibbon, Mireia Garcia Carrasco, \nFederico Giannoni, Majlinda Gjocaj, Marta Gomes, Biljana Grbav\u010devi\u0107, Irina Gubankova, Jean-Paul Guthmann, \nHenrik Hansen, Ur\u0161ka Hribar, Afag Huseynova, Sarah Jackson, Gulnora Jalilova, Jerker Jonsson, Olim Kabirov, \nAbdylat Kadyrov, Gulmira Kalmambetova, Karlygash Kasymbekova, Guljamol Kasymova, Anush Khachatryan, Naira \nKhachatryan, \u0160pela Klemen, Dzmitry Klimuk, Anders Koch, Blerina Kodra, Fiona Koeltringer, Maria Korzeniewska-\nKose\u0142a, Stefan Kr\u00f6ger, Tiina Kummik, Xhevat Kurhasani, Stevan Lu\u010di\u0107, Philipp Ludin, Inna Mammadova, Tanya\n\n"
+    },
+    {
+      "id": "transmission",
+      "question": "How is tuberculosis transmitted?",
+      "retrieved_ids": [
+        [
+          7
+        ],
+        [
+          792
+        ],
+        [
+          48
+        ],
+        [
+          50
+        ],
+        [
+          783
+        ]
+      ],
+      "scores": [
+        0.133147731423378,
+        0.10383901000022888,
+        0.10053731501102448,
+        0.10025142133235931,
+        0.09338714182376862
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 3]\nby WHO to verify the information contained in this publication. However, the published material is \nbeing distributed without warranty of any kind, either expressed or implied. The responsibility for the interpretation and use of the material lies \nwith the reader. In no event shall WHO be liable for damages arising from its use.  \nDesigned by minimum graphics\nCover design by Irwin Law\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 107]\noat \nbottle like below to \ndissolve antigen on \ntube walls\nShake 10x\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 11]\nldolabi, Kaltom Omar AlHami, Abdulbari Al-Hammadi, Omar Al-Jaff, Rofaida AlKady, Nada Almarzouqi, Zuhair \nAlsahoui, Ehab Al-Sakkaf, Layth Al-Salihi, Haya Alsanan, Mohamed Alsarraj, Haleema Alserehi, Awatef Alshammeri, \nKifah AlShaqeldi, Khalsa Al-Thulhli, Amin bin Ali Al-Toumi, Fatma Alyaquobi, Wagdy Amin, Hashim Khan Amirzadah, \nMohamed Belkahla, Imane Chelloufi, Joanne Daghfal, Driss Daoudi, Mohammad Zaher Dildar, Malika El Ouahabi, \nRazia Fatima, Mohamed Furjani, Sara Elhadi Gempi, Hammad Habib, Rasheeda Hamid, Diaa Hjaija, James Hirbo, \nMaryam Karimian, Ibrahim Maia, Khan Mohammad Mangal, Ahmed Mankhi, Badeeha Mansoor, Abderraouf Mansouri, \nAfaf Mohamed, Hamdan Mustafa, Mahshid Nasehi, Yassir Piro, Najia Abdosalam Rasheed, Salma Saad, Radia Sabouni, \nIssa Salha, Muhammad Zia Samad, Ema\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 11]\non Cox, Manfred Danilovi\u0161, Edita Davidaviciene, \nTeresa Domaszewska, Yves Dupont, Adrien Esclade, Lanfranco Fattorini, Margaret Fitzgibbon, Mireia Garcia Carrasco, \nFederico Giannoni, Majlinda Gjocaj, Marta Gomes, Biljana Grbav\u010devi\u0107, Irina Gubankova, Jean-Paul Guthmann, \nHenrik Hansen, Ur\u0161ka Hribar, Afag Huseynova, Sarah Jackson, Gulnora Jalilova, Jerker Jonsson, Olim Kabirov, \nAbdylat Kadyrov, Gulmira Kalmambetova, Karlygash Kasymbekova, Guljamol Kasymova, Anush Khachatryan, Naira \nKhachatryan, \u0160pela Klemen, Dzmitry Klimuk, Anders Koch, Blerina Kodra, Fiona Koeltringer, Maria Korzeniewska-\nKose\u0142a, Stefan Kr\u00f6ger, Tiina Kummik, Xhevat Kurhasani, Stevan Lu\u010di\u0107, Philipp Ludin, Inna Mammadova, Tanya\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 105]\n89\nManagement of Tuberculosis (Fourth Edition)\nAPPENDIX 10\nPROCEDURE FOR TUBERCULIN SKIN TEST\nAs with other medical procedures, TST should be explained to the \npatient and consent obtained verbally. Ensure that the correct patient \ninformation is written or printed in the form. Follow the steps below \nwhen performing the TST.\n\u2022 Clean the area 2 - 4 inches below the elbow joint on \nthe ventral aspect of the forearm for injection. \n\u2022 Make sure the area is free from scars or any \ninfection.\n\u2022 Check the expiry date on the vial.\n\u2022 Use a 1 cc syringe to draw 2 tuberculin units of \nPurified Protein Derivative Statens Serum Institute \nRT23 in 0.1 ml solution.\n\u2022 Inject intradermally at 5\u00b0 to 15\u00b0 to the skin with the \nbevel pointing upwards.\n\u2022 A firm pale wheal about 6 - 10 mm in diameter \nusually a\n\n"
+    },
+    {
+      "id": "latent",
+      "question": "What is the difference between latent TB infection and active TB disease?",
+      "retrieved_ids": [
+        [
+          618
+        ],
+        [
+          496
+        ],
+        [
+          444
+        ],
+        [
+          56
+        ],
+        [
+          50
+        ]
+      ],
+      "scores": [
+        0.1817469745874405,
+        0.1511380821466446,
+        0.13608017563819885,
+        0.13218262791633606,
+        0.13194668292999268
+      ],
+      "context": "[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 62]\nical symptom: current cough, fever, weight loss or night sweats\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 29]\n(CT scan) and magnetic resonance \nimaging (MRI) are commonly used imaging methods for CNS TB. \nThe findings of CNS TB on CT scan are non-specific. In contrast, MRI \ncould provide more diagnostic information. It can better define the \nneuroradiological features of CNS TB, particularly when evaluating \nbrainstem and spinal disease.\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 15]\nIGRA/TST were \nnegative\nAbbreviations:\nADR=adverse drug reaction, CXR=chest radiograph, IGRA=Interferon Gamma Release \nAssay, LTBI=latent tuberculosis infection, PLHIV=people living with HIV, PTB=pulmonary \ntuberculosis, TB=tuberculosis, TST=tuberculin skin test\nxi\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 12]\n, Martina Kifrawi, Kim Jieun, Kim Jinsun, Phonesavanh Kommanivanh, Oscilyna \nKulatea, Win Mar Kyaw, Lee Hyewon, Shuk Nor Maria Lee, Leo Lim, Liza Lopez, Koko Lwin, Brassicae Mabansag, \nCharis se Malbacias, Diana Jean Mallari, Felise Manoa Afasene, Chima Mbakwem, Krisia Denise Misa, Suzana Mohd \nHashim, Enkhnaran Myagmar, Shouhei Nagae, Deborah Ng Hee Ling, Binh Hoa Nguyen, Do Phan Nguyen, Nindil \nHerolyn, Nou Chanly, Akihiro Ohkado, Connie Bieb Olikong, Asiah Omar, Park Young-joon, Ilagina Pepeuga, Asmah \nRazali, Bereka Reiher, Evonne Sablan, Timothy Sahai, Vaimaila Salele, Phitsada Siphanthong, Anousone Sisouvanh, \nLai Bun Tai, Joseph Takai, Mauai Loini Talaapa, Fatimah Talagi, Barbara Tali, Edwina Tangaroa, Fredmen Tarkio, Annie \nTherese Teannaki, Dharshi Thangarajah, Bala Tandan Thanuma\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 11]\non Cox, Manfred Danilovi\u0161, Edita Davidaviciene, \nTeresa Domaszewska, Yves Dupont, Adrien Esclade, Lanfranco Fattorini, Margaret Fitzgibbon, Mireia Garcia Carrasco, \nFederico Giannoni, Majlinda Gjocaj, Marta Gomes, Biljana Grbav\u010devi\u0107, Irina Gubankova, Jean-Paul Guthmann, \nHenrik Hansen, Ur\u0161ka Hribar, Afag Huseynova, Sarah Jackson, Gulnora Jalilova, Jerker Jonsson, Olim Kabirov, \nAbdylat Kadyrov, Gulmira Kalmambetova, Karlygash Kasymbekova, Guljamol Kasymova, Anush Khachatryan, Naira \nKhachatryan, \u0160pela Klemen, Dzmitry Klimuk, Anders Koch, Blerina Kodra, Fiona Koeltringer, Maria Korzeniewska-\nKose\u0142a, Stefan Kr\u00f6ger, Tiina Kummik, Xhevat Kurhasani, Stevan Lu\u010di\u0107, Philipp Ludin, Inna Mammadova, Tanya\n\n"
+    },
+    {
+      "id": "diagnosis",
+      "question": "How is pulmonary tuberculosis diagnosed?",
+      "retrieved_ids": [
+        [
+          791
+        ],
+        [
+          689
+        ],
+        [
+          592
+        ],
+        [
+          478
+        ],
+        [
+          792
+        ]
+      ],
+      "scores": [
+        0.07529425621032715,
+        0.07430973649024963,
+        0.06746188551187515,
+        0.05881304293870926,
+        0.054016612470149994
+      ],
+      "context": "[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 107]\nto make sure the \nentire inner surface of \nthe tube is coated with \nblood. This will dissolve \nantigens on tube walls.\nImportant: Overly vigorous \nshaking may cause gel \ndisruption and could lead \nto aberrant results.\nTransport and incubation\n\u2022 QFT-Plus tubes must \nbe transferred to a 37\u00b0C \n\u00b1 1\u00b0C incubator within \n16 hours of collection \n(labelled as incubated).\nOR\n\u2022 Transport tubes to \nthe testing laboratory \nat 22\u00b0C \u00b1 5\u00b0C. Then \nproceed with incubation \n(labelled as not \nincubated). \nBlood should be \nfilled to the centre \nof black mark \n(indicated in green).\nInvert the bottles \n10 times to coat \nbottle like below to \ndissolve antigen on \ntube walls\nShake 10x\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 80]\nrug interactions may lead to \nadverse events because of/resulting from the reduction in efficacy or \nthe increase in toxicity of the affected drug. Popular drug interaction \ndatabases, such as Micromedex and Lexicomp provide searchable\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 55]\ny, a negative test result obtained \n<8 weeks after exposure is considered unreliable for excluding infection \nand the test should be repeated at the end of the window period.77\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 24]\nputum direct smear for AFB*\nSputum direct smear for AFB \nCXR \nSputum direct smear for AFB#\nSputum direct smear for AFB \nCXR \nVisit Treatment\nduration InvestigationsRegimen\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 107]\noat \nbottle like below to \ndissolve antigen on \ntube walls\nShake 10x\n\n"
+    },
+    {
+      "id": "treatment",
+      "question": "What treatments are used for drug-resistant tuberculosis?",
+      "retrieved_ids": [
+        [
+          410
+        ],
+        [
+          288
+        ],
+        [
+          777
+        ],
+        [
+          784
+        ],
+        [
+          37
+        ]
+      ],
+      "scores": [
+        0.14512258768081665,
+        0.1283591389656067,
+        0.12501239776611328,
+        0.1243434026837349,
+        0.11900538206100464
+      ],
+      "context": "[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 5]\nfrom more than one centre or\ngroup \n Evidence from multiple time series with or without intervention; \ndramatic results in uncontrolled experiments (such as the \nresults of the introduction of penicillin treatment in the 1940s) \ncould also be regarded as this type of evidence\nOpinions of respected authorities based on clinical experience; \ndescriptive studies and case reports; or reports of  expert \ncommittees\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 48]\ntificial intelligence will be made \navailable by the end of 2024.\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 102]\naya BF, Andronikou S, et al. Standardized radiographic \ninterpretation of thoracic tuberculosis in children. Pediatr Radiol. \n2017;47(10):1237-1248\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 105]\nerivative Statens Serum Institute \nRT23 in 0.1 ml solution.\n\u2022 Inject intradermally at 5\u00b0 to 15\u00b0 to the skin with the \nbevel pointing upwards.\n\u2022 A firm pale wheal about 6 - 10 mm in diameter \nusually appears. If it does not, then repeat the test \nat least two inches away from the original site.\n\u2022 The skin test should be read 48 - 72 hours after \ninjection. \n\u2022 Feel the edges of the induration (hard, dense, \nraised area) and measure the longest diameter of \nthe induration perpendicular to the long axis of the \nforearm.\n\u2022 The erythema surrounding the induration should \nnot be measured.\n\u2022 Reading should be recorded in millimetres. \n\u2022 If there is no induration, record as 0 mm. \n\u2022 The interpretation and cut-off values for different \npopulations is discussed in Subchapter 3.1 on \nLTBI in Adults.\nA\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 10]\nKandarath Balakrishnan Shibu, Vineet Bhatia, Maria Regina Christian, Deyer Gopinath, Thiraj \nDhakshitha Haputhanthri, Anupama Hazarika, Sarah Jamal, Debashish Kundu, Kallayanee Laempoo, Setiawan Jati \nLaksono, Khin Pa Pa Naing, O Nam Ju, Thet Naing Oo, Sudirikku Hennadige Padmal, Shushil Dev Pant, Malik Parmar, \nGautam Rabin, Ranjani Ramachandran, Md Jewel Rana, Md Kamar Rezwan, Nazis Arefin Saki, Barsha Thapa, Sonam \nWangdi, Dongbao Yu.\nWHO Western Pacific Region\nTsolmon Boldoo, Serongkea Deng, Bayo Segun Fatunmbi, Deepa Gamage, Philippe Guyant, Clarissa Blanca Halum, \nLepaitai Hansell, Tom Hiatt, Narantuya Jadambaa, Nuha Mahmoud, Mugagga Malimbo, Fukushi Morishita, Kyung \nHyun Oh, Anuzaya Prevdagva, Challa Negeri Ruda, Jacques Sebert, Vilath Seevisay, Mattew Shortus, Chun Paul Soo, \nSomd\n\n"
+    },
+    {
+      "id": "greeting",
+      "question": "Hello",
+      "retrieved_ids": [
+        [
+          618
+        ],
+        [
+          583
+        ],
+        [
+          397
+        ],
+        [
+          34
+        ],
+        [
+          43
+        ]
+      ],
+      "scores": [
+        0.17408238351345062,
+        0.14073187112808228,
+        0.12348607182502747,
+        0.12000758945941925,
+        0.1084693968296051
+      ],
+      "context": "[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 62]\nical symptom: current cough, fever, weight loss or night sweats\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 53]\nen countries\n\u2022 prisoners\n\u2022 illicit drug users\n\u2022 homeless people\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 65]\nForfurtherinformationpleasecontact:\nGlobalTuberculosisProgramme\nWorldHealthOrganization\n20,avenueAppia\nCH-1211Geneva27\nWeb:www.who.int/teams/global-tuberculosis-programme\nEmail:tbdata@who.int\nIt was a bright cold day in April, and the clocks were striking thirteen.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 10]\nx\nWHO Region of the Americas \nZohra Abaakouk, Catleya Abella, Monica Alonso, Angel Alvarez, Kleydson Alves, Fiona Elizabeth Anthony, Miguel \nAngel Arag\u00f3n, Eden Augustus, Pedro Avedillo, Valerie Beach-Horne, Susana Borroto, Ana Botello, Olivia Brathwaite, \nGemma Chery, Beatriz Cohenca, Gladzdin Jean Denis, Rainier Escalada, Gloria Figueroa, Emmanuel Forlack, Izola \nGarcia, Guillermo Gonzalvez, Monica Guardo, Franklin Hernandez, Reynold Hewitt, Wendy Idiaquez, Ana Maria \nJimenez, Sandra Jones, Serene Joseph, Job Joseph, Muhammad Selim Khan, Francisco Le\u00f3n, Raquel Mahoque, \nBelkys Marcelino, Oscar Martin Mesones, Ernesto Montoro, Romeo Montoya, Gabriela Rey, Elizabeth Rodriguez, \nGrisel Rodriguez, Hans Salas, Maria Esther Salazar, Maria Jesus Sanchez, Prabhjot Singh, Nicole Helene Slack-Libur\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 11]\nifa Samateh, Agbenyegan Samey, Tandaogo Saouadogo, Rufus Saye, Pascal Selemani, \nCebisile Shabangu, Hilarius Shilomboleni, Siene Tienabe, Armando Sifna, Bakary Sirageou, Nicholas Siziba, Glory \nThadei, Apal Toby, Daniel Tollo, Mariame Ti\u00e8ba Traore, Abdallahi Traor\u00e9, Mancoba Tsabedze, Stavia Turyahabwe, \nAdrien Ware, Mardemn Yeasuen, Amtatachew Moges Zegeye, Justine Zlahn.\nWHO Region of the Americas\nLeandra Abarca, Sarita Aguirre, Shalauddin Ahmed, Edwin Alexis Aizpurua, Antonieta Alarcon Guizado, Xochil Alem\u00e1n \nde Cruz, Gabriela Amaya, Gustavo Amor, Aisha Andrewin, Tiemi Arakawa, Dwain Archibald, Fabiola Arias Mu\u00f1oz, \nSandra Ariza Matiz, Nancy Ayala, Carlos Alberto Marcos Ayala Luna, Shalini Baldi, Wiedjaiperkash Balesar, Engels \nIlich Banegas, Jos\u00e9 Calderon-Squiabro, Beatriz Eugenia Casti\n\n"
+    },
+    {
+      "id": "unrelated",
+      "question": "How do I bake a chocolate cake?",
+      "retrieved_ids": [
+        [
+          410
+        ],
+        [
+          5
+        ],
+        [
+          402
+        ],
+        [
+          7
+        ],
+        [
+          9
+        ]
+      ],
+      "scores": [
+        0.07401128858327866,
+        0.06357786059379578,
+        0.05531773716211319,
+        0.05515841022133827,
+        0.044407084584236145
+      ],
+      "context": "[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 5]\nfrom more than one centre or\ngroup \n Evidence from multiple time series with or without intervention; \ndramatic results in uncontrolled experiments (such as the \nresults of the introduction of penicillin treatment in the 1940s) \ncould also be regarded as this type of evidence\nOpinions of respected authorities based on clinical experience; \ndescriptive studies and case reports; or reports of  expert \ncommittees\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 3]\nparty materials.  If you wish to reuse material from this work that is attributed to a third party, such as tables, figures or images, it is your \nresponsibility to determine whether permission is needed for that reuse and to obtain permission from the copyright holder. The risk of claims \nresulting from infringement of any third-party-owned component in the work rests solely with the user.\nGeneral disclaimers. The designations employed and the presentation of the material in this publication do not imply the expression of any \nopinion whatsoever on the part of WHO concerning the legal status of any country, territory, city or area or of its authorities, or concerning the \ndelimitation of its frontiers or boundaries. Dotted and dashed lines on maps represent approximate border lines for wh\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 2]\nin every detail at \nthe time of publication. However, in the event of errors or omissions, \ncorrections will be published in the web version of this document, which \nwill be the definitive version. This version can be found on the websites \nmentioned above.\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 3]\nby WHO to verify the information contained in this publication. However, the published material is \nbeing distributed without warranty of any kind, either expressed or implied. The responsibility for the interpretation and use of the material lies \nwith the reader. In no event shall WHO be liable for damages arising from its use.  \nDesigned by minimum graphics\nCover design by Irwin Law\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 4]\nZorica Nanovic, Valeriu \nNegre, Anne Negre, Cholpon Nurgazieva, \n \n \n \n \n \nThis correction has been incorporated into the electronic file.\n\n"
+    },
+    {
+      "id": "unsupported",
+      "question": "What is the opening time of my nearest TB clinic today?",
+      "retrieved_ids": [
+        [
+          258
+        ],
+        [
+          410
+        ],
+        [
+          496
+        ],
+        [
+          618
+        ],
+        [
+          777
+        ]
+      ],
+      "scores": [
+        0.1424844115972519,
+        0.13095402717590332,
+        0.12523382902145386,
+        0.12181497365236282,
+        0.10370664298534393
+      ],
+      "context": "[Global Tuberculosis Report 2024 by WHO.pdf - page 44]\nlia\nNigeria\nNiger\nZimbabwe\nTimor-Leste\nNamibia\nSolomon Islands\nPercentage\n02 55 07 5 100\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 5]\nfrom more than one centre or\ngroup \n Evidence from multiple time series with or without intervention; \ndramatic results in uncontrolled experiments (such as the \nresults of the introduction of penicillin treatment in the 1940s) \ncould also be regarded as this type of evidence\nOpinions of respected authorities based on clinical experience; \ndescriptive studies and case reports; or reports of  expert \ncommittees\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 29]\n(CT scan) and magnetic resonance \nimaging (MRI) are commonly used imaging methods for CNS TB. \nThe findings of CNS TB on CT scan are non-specific. In contrast, MRI \ncould provide more diagnostic information. It can better define the \nneuroradiological features of CNS TB, particularly when evaluating \nbrainstem and spinal disease.\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 62]\nical symptom: current cough, fever, weight loss or night sweats\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 102]\naya BF, Andronikou S, et al. Standardized radiographic \ninterpretation of thoracic tuberculosis in children. Pediatr Radiol. \n2017;47(10):1237-1248\n\n"
+    },
+    {
+      "id": "followup",
+      "question": "What about its side effects?",
+      "retrieved_ids": [
+        [
+          694
+        ],
+        [
+          590
+        ],
+        [
+          821
+        ],
+        [
+          791
+        ],
+        [
+          9
+        ]
+      ],
+      "scores": [
+        0.2561655044555664,
+        0.22420179843902588,
+        0.2200893759727478,
+        0.21868464350700378,
+        0.21720682084560394
+      ],
+      "context": "[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 81]\nrse transcriptase inhibitors\nThere are no clinically significant interactions between NRTIs with \neither RIF or RFB. 8 However, there is limited evidence on the safety\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 55]\nings (healed TB lesions are often \ncharacterised by nodules and fibrotic lesions that are well \ndemarcated). If changes are present, consider repeating \nsputum induction, or bronchoalveolar lavage smear for AFB \nand mycobacterial culture. In the presence of any unexplained \nabnormal findings, consider sending the CXR for reporting.\n\uf0a1 A positive TST or IGRA.\n\u2022 Tuberculin skin test\nTST is performed via the Mantoux technique, which consists of \nintradermal injection of purified-protein derivative on the inner aspect \nof the forearm. This stimulates a delayed T-lymphocyte mediated \nhypersensitivity response in patients with prior mycobacterial exposure. \nThe test must be read between 48 - 72 hours later.\nThere is no new evidence on the ideal cut-off value for TST in an \nintermediate to high TB\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 119]\nr nucleotide-reverse \ntranscriptase inhibitors for initial treatment of HIV infection in antiretroviral-na\u00efve individuals. Cochrane Database Syst Rev. 2016;12(12):CD004246. \n7. Podany AT, Bao Y, Swindells S, et al. AIDS Clinical Trials Group A5279 Study Team. Efavirenz Pharmacokinetics and Pharmacodynamics in HIV-\nInfected Persons Receiving Rifapentine and Isoniazid for Tuberculosis Prevention. Clin Infect Dis. 2015;61(8):1322-7. \n8. Cerrone M, Alfarisi O, Neary M, et al. Rifampicin effect on intracellular and plasma pharmacokinetics of tenofovir alafenamide. J Antimicrob \nChemother. 2019 Jun 1;74(6):1670-1678.\n9. Martin TCS, Hill LA, Tang ME, Balcombe SM. Tenofovir alafenamide and rifabutin co-administration does not lead to loss of HIV-1 suppression: \n A retrospective observational study\n\n[Management_of_Tuberculosis_(4th_Edition) by MHO.pdf - page 107]\nto make sure the \nentire inner surface of \nthe tube is coated with \nblood. This will dissolve \nantigens on tube walls.\nImportant: Overly vigorous \nshaking may cause gel \ndisruption and could lead \nto aberrant results.\nTransport and incubation\n\u2022 QFT-Plus tubes must \nbe transferred to a 37\u00b0C \n\u00b1 1\u00b0C incubator within \n16 hours of collection \n(labelled as incubated).\nOR\n\u2022 Transport tubes to \nthe testing laboratory \nat 22\u00b0C \u00b1 5\u00b0C. Then \nproceed with incubation \n(labelled as not \nincubated). \nBlood should be \nfilled to the centre \nof black mark \n(indicated in green).\nInvert the bottles \n10 times to coat \nbottle like below to \ndissolve antigen on \ntube walls\nShake 10x\n\n[Global Tuberculosis Report 2024 by WHO.pdf - page 4]\nZorica Nanovic, Valeriu \nNegre, Anne Negre, Cholpon Nurgazieva, \n \n \n \n \n \nThis correction has been incorporated into the electronic file.\n\n"
+    }
+  ]
+}

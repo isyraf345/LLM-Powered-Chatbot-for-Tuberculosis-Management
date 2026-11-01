@@ -1,0 +1,38 @@
+[
+  {
+    "id": "symptoms",
+    "question": "What are the symptoms of tuberculosis?"
+  },
+  {
+    "id": "transmission",
+    "question": "How is tuberculosis transmitted?"
+  },
+  {
+    "id": "latent",
+    "question": "What is the difference between latent TB infection and active TB disease?"
+  },
+  {
+    "id": "diagnosis",
+    "question": "How is pulmonary tuberculosis diagnosed?"
+  },
+  {
+    "id": "treatment",
+    "question": "What treatments are used for drug-resistant tuberculosis?"
+  },
+  {
+    "id": "greeting",
+    "question": "Hello"
+  },
+  {
+    "id": "unrelated",
+    "question": "How do I bake a chocolate cake?"
+  },
+  {
+    "id": "unsupported",
+    "question": "What is the opening time of my nearest TB clinic today?"
+  },
+  {
+    "id": "followup",
+    "question": "What about its side effects?"
+  }
+]

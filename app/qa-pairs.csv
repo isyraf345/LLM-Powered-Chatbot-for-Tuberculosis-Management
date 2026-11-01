@@ -1,0 +1,100 @@
+question,ground_truth_answer,expected_passage
+What are the symptoms of tuberculosis?,Common symptoms include productive cough haemoptysis fever night sweats weight loss and fatigue.,Common symptoms of pulmonary TB include productive cough haemoptysis loss of appetite unintentional weight loss fever night sweats and fatigue.
+How is tuberculosis transmitted?,TB is spread through the air when a person with active TB coughs and releases bacteria.,TB is spread when people who are sick with TB expel bacteria into the air for example by coughing.
+Which part of the body is most commonly affected by TB?,The lungs are most commonly affected although TB can affect other parts of the body.,TB typically affects the lungs pulmonary TB but can also affect other sites extrapulmonary TB.
+Who is more likely to develop TB disease?,About 90 percent of TB cases are adults with more men affected than women.,Of the total number of people who develop TB about 90 percent are adults with more cases among men than women.
+What are the major risk factors for TB?,Major risk factors include HIV undernutrition diabetes smoking and alcohol use.,The risk of developing TB disease is much higher among people living with HIV and among people affected by risk factors such as undernutrition diabetes smoking and alcohol consumption.
+Why are people with HIV at high risk of TB?,Their weakened immune system makes them more likely to progress from infection to disease.,The risk of TB disease is much higher among people living with HIV.
+What tests can diagnose pulmonary TB?,Tests include chest X ray sputum smear microscopy mycobacterial culture and rapid molecular tests.,Diagnostic tests include several rapid molecular tests recommended by WHO as the initial diagnostic test for TB.
+Is Xpert Ultra more sensitive than Xpert MTB RIF?,Yes it has a lower limit of detection and is more sensitive.,The Xpert Ultra has a lower limit of detection and is more sensitive than the Xpert MTB RIF assay.
+What is the role of chest X ray in TB diagnosis?,It is a sensitive imaging tool that helps detect pulmonary TB lesions early.,Chest X ray remains the most sensitive tool available for diagnosing and managing pulmonary TB.
+What treatment regimens prevent TB infection?,Preventive options include 3HP 3HR 1HP 4R and 6H.,WHO recommends several TB preventive treatment options including 3HR 3HP 1HP and 6H regimens.
+How is latent TB infection diagnosed?,Through tuberculin skin test TST or interferon gamma release assay IGRA.,Latent TB infection is diagnosed using TST or IGRA after ruling out active TB.
+Is TB a notifiable disease?,Yes all TB cases must be reported to health authorities.,TB cases must be notified to the District Health Office within seven days.
+How long is standard TB treatment?,Six months consisting of two months of intensive therapy followed by four months continuation.,Standard TB treatment lasts six months two months of HRZE and four months of HR.
+What rapid tests detect TB drug resistance?,Rapid molecular tests like Xpert MTB RIF detect TB and rifampicin resistance.,Several rapid molecular tests recommended by WHO can detect TB and drug resistance simultaneously.
+What is multidrug resistant TB?,TB resistant to at least isoniazid and rifampicin.,Multidrug resistant TB is defined as resistance to at least isoniazid and rifampicin.
+What increases the risk of drug resistant TB?,Poor adherence previous incomplete treatment and exposure to resistant strains.,Drug resistant TB often results from inadequate treatment or transmission of resistant strains.
+What is the DOTS strategy?,A strategy ensuring supervised treatment to improve adherence and cure rates.,DOTS involves supervised treatment to ensure that patients complete their TB therapy.
+What is TB incidence globally?,More than 10 million people fall ill with TB each year.,More than 10 million people continue to fall ill with TB every year.
+What age group has the highest TB burden?,Adults experience the highest burden of TB disease.,Most people who develop TB disease about 90 percent are adults.
+How deadly is TB worldwide?,TB is one of the leading infectious killers causing millions of deaths.,TB probably returned to being the world’s leading cause of death from a single infectious agent.
+Can TB affect organs other than the lungs?,Yes it can affect many organs including lymph nodes brain spine and kidneys.,TB can also affect other sites extrapulmonary TB.
+What is the purpose of rapid molecular testing?,To provide fast and accurate detection of TB and drug resistance.,Rapid molecular tests recommended by WHO detect TB and drug resistance simultaneously.
+How long after infection is TB most likely to develop?,Risk is highest in the first two years after infection.,Following infection the risk of developing TB disease is highest in the first two years approximately five percent.
+Can people clear TB infection naturally?,Yes some people clear the infection without treatment.,Some people will clear the infection.
+What percentage of the population is estimated to have TB infection?,About one quarter of the global population.,About a quarter of the global population is estimated to have been infected with TB.
+What is pulmonary TB?,A form of TB that affects the lungs.,TB typically affects the lungs pulmonary TB.
+What is extrapulmonary TB?,TB that affects organs outside the lungs.,TB can also affect other sites extrapulmonary TB.
+Why is early diagnosis important?,It reduces transmission and improves treatment outcomes.,Urgent action is required to diagnose and treat TB quickly to reduce the epidemic.
+What organisms cause TB?,TB is caused by Mycobacterium tuberculosis.,TB is caused by the bacillus Mycobacterium tuberculosis.
+What is the main purpose of TB screening?,To identify people who may have TB and need further testing.,Screening helps identify people who may have TB so they can be tested and treated.
+Who should receive preventive TB treatment?,People at high risk including contacts of TB patients and people living with HIV.,Preventive treatment is available for people at high risk including people living with HIV.
+Why is nutrition important in TB?,Undernutrition increases susceptibility and worsens outcomes.,Risk is higher among people affected by undernutrition.
+Can TB be cured?,Yes TB is preventable and usually curable.,Tuberculosis is a preventable and usually curable disease.
+What contributes to rising TB cases?,Gaps in diagnosis treatment and health system disruptions.,More than 10 million people continue to fall ill with TB every year and numbers have risen since 2021.
+Does TB affect men or women more?,TB affects men more than women.,There are more TB cases among men than women.
+How is TB spread in communities?,Through airborne droplets from someone with active pulmonary TB.,TB spreads when people with TB expel bacteria into the air.
+What is the TB bacillus?,It is the bacterium Mycobacterium tuberculosis.,TB is caused by the bacillus Mycobacterium tuberculosis.
+When was TB bacillus discovered?,It was discovered by Dr Robert Koch in 1882.,Its cause remained unknown until 24 March 1882 when Dr Robert Koch announced his discovery of the bacillus responsible.
+Why is molecular testing preferred today?,It is faster and more accurate than smear microscopy.,Rapid molecular tests have improved substantially and are recommended as the initial diagnostic test.
+What is the purpose of culture testing?,To grow TB bacteria and confirm diagnosis and drug susceptibility.,Culture remains important for confirming TB and performing drug susceptibility testing.
+What is the difference between TB infection and TB disease?,TB infection means the bacteria are present but inactive while TB disease means the bacteria are active and causing symptoms.,TB infection is latent with no symptoms whereas TB disease is active and symptomatic.
+Can TB be asymptomatic?,Yes many people with TB infection do not show symptoms.,Many individuals carry TB bacteria without symptoms until the disease becomes active.
+Why do some people progress from infection to disease?,Progression happens when the immune system fails to keep the bacteria under control.,After infection the chance of developing TB disease is highest when immunity weakens.
+What factors weaken the immune system in relation to TB?,HIV poor nutrition diabetes and substance use increase vulnerability.,Risk factors like HIV undernutrition diabetes and alcohol use raise disease likelihood.
+How long does it take after exposure for TB to develop?,TB disease most often develops within the first two years after exposure.,The risk of developing TB is greatest in the initial two years following infection.
+Why is undernutrition linked to TB?,A weakened nutritional state reduces immune defenses and makes disease more likely.,People with inadequate nutrition face a higher risk of developing active TB.
+How effective are rapid molecular TB tests?,They detect TB and drug resistance quickly with high accuracy.,Modern molecular tests offer rapid and sensitive detection of TB and resistance markers.
+What is the purpose of sputum smear microscopy?,It helps identify TB bacteria under a microscope though less sensitive than molecular tests.,Smear microscopy can detect bacteria but is less sensitive especially in early disease.
+What makes TB difficult to diagnose in children?,Children often have low bacterial loads and nonspecific symptoms.,Pediatric TB is challenging due to minimal bacteria and overlapping symptoms with other illnesses.
+What body fluids can be tested for extrapulmonary TB?,Depending on site fluids like urine cerebrospinal fluid or lymph node aspirates may be tested.,Extrapulmonary TB diagnosis uses samples taken directly from the affected site.
+Why is rifampicin resistance important?,Rifampicin resistance often signals multidrug resistant TB and changes treatment.,Resistance to rifampicin is a key indicator for more complex TB treatment.
+What does MDR TB require for treatment?,A longer regimen using multiple second line drugs.,Multidrug resistant TB needs extended therapy with second line medications.
+What is the global burden trend for TB since 2021?,TB cases increased after disruptions caused by the pandemic.,TB incidence rose again following COVID related setbacks in health systems.
+Why is early detection critical?,It prevents severe disease and reduces community spread.,Early diagnosis limits transmission and improves patient outcomes.
+What is the role of contact investigation?,To find people exposed to TB so they can be tested and treated.,Investigating contacts identifies those at risk and helps prevent spread.
+What is latent TB?,Latent TB means the bacteria remain inactive without symptoms.,TB infection can remain dormant with no signs of illness.
+Can latent TB become active?,Yes particularly when immunity is weakened.,Latent TB can develop into disease when the immune system declines.
+What populations are high priority for TB screening?,People living with HIV close contacts and high risk medical groups.,Screening targets individuals with elevated TB risk.
+Why does TB affect men more than women?,Behavioral social and exposure differences contribute to higher male incidence.,Statistics show more TB cases among men than women worldwide.
+What contributes to TB transmission indoors?,Poor ventilation and close contact with an infectious person.,Transmission increases in crowded or poorly ventilated indoor areas.
+What are signs of extrapulmonary TB?,They depend on the organ affected such as swollen lymph nodes or back pain.,Extrapulmonary TB shows organ specific symptoms depending on the site.
+Why is bacteriological confirmation important?,It provides definitive evidence of TB and guides drug resistance testing.,Confirming TB through laboratory testing supports accurate diagnosis and treatment planning.
+Can TB be prevented?,Yes through preventive treatment infection control and vaccination.,TB prevention includes chemoprophylaxis infection control and vaccination strategies.
+What does the BCG vaccine do?,BCG helps protect children from severe forms of TB.,The BCG vaccine reduces the risk of serious childhood TB.
+Can TB recur after treatment?,Yes relapse can occur especially if treatment was incomplete.,TB may return when previous treatment was inadequate or resistance developed.
+What is the purpose of the continuation phase of TB therapy?,To eliminate remaining bacteria and prevent relapse.,The continuation phase targets persistent organisms after intensive therapy.
+What effect does diabetes have on TB?,Diabetes weakens immunity and raises the risk of developing TB.,People with diabetes face a higher chance of active TB disease.
+How does alcohol use influence TB risk?,Alcohol impairs immune function and increases susceptibility.,Excessive alcohol use is a recognized TB risk factor.
+How do molecular tests detect TB?,They identify TB genetic material and resistance markers.,Rapid tests detect TB DNA and drug resistance mutations.
+Why are childhood TB cases often under reported?,Symptoms mimic other illnesses and tests are less sensitive.,Children frequently have nonspecific symptoms and low bacterial levels.
+What is the estimated percentage of global TB infection?,About one quarter of the world population.,Roughly a quarter of people globally carry latent TB infection.
+Why is pulmonary TB the most infectious form?,It involves the lungs enabling bacteria to be expelled into the air.,Pulmonary disease spreads through airborne droplets released during coughing.
+How long must an exposure be to transmit TB?,Transmission can occur after prolonged or repeated close contact.,TB usually spreads through sustained exposure to someone infectious.
+Why are rapid tests preferred at lower health system levels?,They are quick require minimal infrastructure and improve early detection.,Rapid molecular tests can be used effectively in decentralized healthcare settings.
+What influences TB mortality rates globally?,Health system strength diagnostic access and treatment quality.,TB deaths correlate with gaps in diagnosis treatment and system capacity.
+Can TB affect the kidneys?,Yes TB can involve any organ including kidneys.,Extrapulmonary TB may appear in renal tissue.
+Why does TB spread more in crowded environments?,Close proximity facilitates inhalation of infectious droplets.,Crowded settings increase the likelihood of airborne transmission.
+How is spinal TB identified?,Through imaging and sampling of affected tissue.,Diagnosis relies on scans and tests taken from the spine.
+What happens if TB treatment is interrupted?,It increases relapse and drug resistance risk.,Stopping therapy early can lead to resistant TB and treatment failure.
+How does smoking relate to TB risk?,Smoking damages lung defenses making infection more likely.,Tobacco use heightens vulnerability to TB disease.
+What is the goal of global TB strategies?,To reduce incidence and mortality and eventually eliminate TB.,Global initiatives aim to end the TB epidemic by 2030.
+Why are some TB cases missed?,Because symptoms are mild or health services are limited.,Underdiagnosis occurs when symptoms resemble common illnesses or tests are inaccessible.
+Can TB bacteria survive outside the body?,They survive briefly in air but not long on surfaces.,TB spreads mainly through airborne particles not surface contact.
+What are indicators of severe TB?,Severe weight loss persistent fever difficulty breathing and extensive lung damage.,Advanced TB shows significant systemic and respiratory symptoms.
+What makes diagnosing TB in HIV patients difficult?,Symptoms may be atypical and tests less sensitive.,HIV coinfection can mask classical TB signs.
+What is the role of culture in TB diagnosis?,It provides confirmatory evidence and supports drug testing.,Culture is vital for detecting TB bacteria and assessing resistance.
+How does preventive TB therapy work?,It kills dormant TB bacteria before they become active.,Preventive regimens reduce the chance of future TB disease.
+Can TB be transmitted by sharing utensils?,No TB is airborne and does not spread through food or utensils.,Transmission occurs through inhalation of airborne bacteria.
+What is the duration of infectiousness in untreated TB?,Infectiousness continues as long as untreated active pulmonary disease is present.,People remain infectious until receiving effective therapy.
+Why is cough a key TB symptom?,Cough helps expel bacteria increasing the chance of spread.,TB in the lungs irritates airways producing persistent cough.
+What is the role of national TB programs?,They coordinate diagnosis treatment surveillance and prevention.,TB programs design and implement national control strategies.
+How is TB monitored during treatment?,Patients undergo clinical evaluation sputum tests and radiographic monitoring.,Monitoring includes periodic testing to track treatment response.
+Can TB cause permanent damage?,Yes severe or late stage TB can scar lungs and impair function.,Untreated TB may leave lasting structural damage.
+Why must TB patients adhere strictly to treatment?,Incomplete adherence leads to treatment failure and resistance.,Strict adherence ensures cure and prevents resistant strains.
+What is the significance of rifampicin in TB therapy?,It is one of the core first line drugs essential for effective treatment.,Rifampicin is a cornerstone medicine in standard TB regimens.
+What challenges exist in detecting extrapulmonary TB?,Symptoms are varied and bacteria levels are low.,Extrapulmonary TB often lacks clear signs and has fewer detectable bacteria.
+Can TB spread without coughing?,Less commonly but talking or sneezing can release bacteria.,TB spreads most with coughing but other respiratory actions can transmit it.
+Why is TB still a major global health issue?,Persistent transmission underdiagnosis and treatment gaps keep TB widespread.,Ongoing challenges maintain TB as a leading infectious disease.
+What improves TB outcomes most?,Early diagnosis and effective treatment.,Prompt testing and complete therapy significantly improve outcomes.

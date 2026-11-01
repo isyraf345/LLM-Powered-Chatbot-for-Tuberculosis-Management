@@ -1,0 +1,794 @@
+[
+  {
+    "id": "qa-001",
+    "question": "What are the symptoms of tuberculosis?",
+    "ground_truth_answer": "Common symptoms include productive cough haemoptysis fever night sweats weight loss and fatigue.",
+    "expected_passage": "Common symptoms of pulmonary TB include productive cough haemoptysis loss of appetite unintentional weight loss fever night sweats and fatigue.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-002",
+    "question": "How is tuberculosis transmitted?",
+    "ground_truth_answer": "TB is spread through the air when a person with active TB coughs and releases bacteria.",
+    "expected_passage": "TB is spread when people who are sick with TB expel bacteria into the air for example by coughing.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-003",
+    "question": "Which part of the body is most commonly affected by TB?",
+    "ground_truth_answer": "The lungs are most commonly affected although TB can affect other parts of the body.",
+    "expected_passage": "TB typically affects the lungs pulmonary TB but can also affect other sites extrapulmonary TB.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-004",
+    "question": "Who is more likely to develop TB disease?",
+    "ground_truth_answer": "About 90 percent of TB cases are adults with more men affected than women.",
+    "expected_passage": "Of the total number of people who develop TB about 90 percent are adults with more cases among men than women.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-005",
+    "question": "What are the major risk factors for TB?",
+    "ground_truth_answer": "Major risk factors include HIV undernutrition diabetes smoking and alcohol use.",
+    "expected_passage": "The risk of developing TB disease is much higher among people living with HIV and among people affected by risk factors such as undernutrition diabetes smoking and alcohol consumption.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-006",
+    "question": "Why are people with HIV at high risk of TB?",
+    "ground_truth_answer": "Their weakened immune system makes them more likely to progress from infection to disease.",
+    "expected_passage": "The risk of TB disease is much higher among people living with HIV.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-007",
+    "question": "What tests can diagnose pulmonary TB?",
+    "ground_truth_answer": "Tests include chest X ray sputum smear microscopy mycobacterial culture and rapid molecular tests.",
+    "expected_passage": "Diagnostic tests include several rapid molecular tests recommended by WHO as the initial diagnostic test for TB.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-008",
+    "question": "Is Xpert Ultra more sensitive than Xpert MTB RIF?",
+    "ground_truth_answer": "Yes it has a lower limit of detection and is more sensitive.",
+    "expected_passage": "The Xpert Ultra has a lower limit of detection and is more sensitive than the Xpert MTB RIF assay.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-009",
+    "question": "What is the role of chest X ray in TB diagnosis?",
+    "ground_truth_answer": "It is a sensitive imaging tool that helps detect pulmonary TB lesions early.",
+    "expected_passage": "Chest X ray remains the most sensitive tool available for diagnosing and managing pulmonary TB.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-010",
+    "question": "What treatment regimens prevent TB infection?",
+    "ground_truth_answer": "Preventive options include 3HP 3HR 1HP 4R and 6H.",
+    "expected_passage": "WHO recommends several TB preventive treatment options including 3HR 3HP 1HP and 6H regimens.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-011",
+    "question": "How is latent TB infection diagnosed?",
+    "ground_truth_answer": "Through tuberculin skin test TST or interferon gamma release assay IGRA.",
+    "expected_passage": "Latent TB infection is diagnosed using TST or IGRA after ruling out active TB.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-012",
+    "question": "Is TB a notifiable disease?",
+    "ground_truth_answer": "Yes all TB cases must be reported to health authorities.",
+    "expected_passage": "TB cases must be notified to the District Health Office within seven days.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-013",
+    "question": "How long is standard TB treatment?",
+    "ground_truth_answer": "Six months consisting of two months of intensive therapy followed by four months continuation.",
+    "expected_passage": "Standard TB treatment lasts six months two months of HRZE and four months of HR.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-014",
+    "question": "What rapid tests detect TB drug resistance?",
+    "ground_truth_answer": "Rapid molecular tests like Xpert MTB RIF detect TB and rifampicin resistance.",
+    "expected_passage": "Several rapid molecular tests recommended by WHO can detect TB and drug resistance simultaneously.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-015",
+    "question": "What is multidrug resistant TB?",
+    "ground_truth_answer": "TB resistant to at least isoniazid and rifampicin.",
+    "expected_passage": "Multidrug resistant TB is defined as resistance to at least isoniazid and rifampicin.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-016",
+    "question": "What increases the risk of drug resistant TB?",
+    "ground_truth_answer": "Poor adherence previous incomplete treatment and exposure to resistant strains.",
+    "expected_passage": "Drug resistant TB often results from inadequate treatment or transmission of resistant strains.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-017",
+    "question": "What is the DOTS strategy?",
+    "ground_truth_answer": "A strategy ensuring supervised treatment to improve adherence and cure rates.",
+    "expected_passage": "DOTS involves supervised treatment to ensure that patients complete their TB therapy.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-018",
+    "question": "What is TB incidence globally?",
+    "ground_truth_answer": "More than 10 million people fall ill with TB each year.",
+    "expected_passage": "More than 10 million people continue to fall ill with TB every year.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-019",
+    "question": "What age group has the highest TB burden?",
+    "ground_truth_answer": "Adults experience the highest burden of TB disease.",
+    "expected_passage": "Most people who develop TB disease about 90 percent are adults.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-020",
+    "question": "How deadly is TB worldwide?",
+    "ground_truth_answer": "TB is one of the leading infectious killers causing millions of deaths.",
+    "expected_passage": "TB probably returned to being the world\u2019s leading cause of death from a single infectious agent.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-021",
+    "question": "Can TB affect organs other than the lungs?",
+    "ground_truth_answer": "Yes it can affect many organs including lymph nodes brain spine and kidneys.",
+    "expected_passage": "TB can also affect other sites extrapulmonary TB.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-022",
+    "question": "What is the purpose of rapid molecular testing?",
+    "ground_truth_answer": "To provide fast and accurate detection of TB and drug resistance.",
+    "expected_passage": "Rapid molecular tests recommended by WHO detect TB and drug resistance simultaneously.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-023",
+    "question": "How long after infection is TB most likely to develop?",
+    "ground_truth_answer": "Risk is highest in the first two years after infection.",
+    "expected_passage": "Following infection the risk of developing TB disease is highest in the first two years approximately five percent.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-024",
+    "question": "Can people clear TB infection naturally?",
+    "ground_truth_answer": "Yes some people clear the infection without treatment.",
+    "expected_passage": "Some people will clear the infection.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-025",
+    "question": "What percentage of the population is estimated to have TB infection?",
+    "ground_truth_answer": "About one quarter of the global population.",
+    "expected_passage": "About a quarter of the global population is estimated to have been infected with TB.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-026",
+    "question": "What is pulmonary TB?",
+    "ground_truth_answer": "A form of TB that affects the lungs.",
+    "expected_passage": "TB typically affects the lungs pulmonary TB.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-027",
+    "question": "What is extrapulmonary TB?",
+    "ground_truth_answer": "TB that affects organs outside the lungs.",
+    "expected_passage": "TB can also affect other sites extrapulmonary TB.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-028",
+    "question": "Why is early diagnosis important?",
+    "ground_truth_answer": "It reduces transmission and improves treatment outcomes.",
+    "expected_passage": "Urgent action is required to diagnose and treat TB quickly to reduce the epidemic.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-029",
+    "question": "What organisms cause TB?",
+    "ground_truth_answer": "TB is caused by Mycobacterium tuberculosis.",
+    "expected_passage": "TB is caused by the bacillus Mycobacterium tuberculosis.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-030",
+    "question": "What is the main purpose of TB screening?",
+    "ground_truth_answer": "To identify people who may have TB and need further testing.",
+    "expected_passage": "Screening helps identify people who may have TB so they can be tested and treated.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-031",
+    "question": "Who should receive preventive TB treatment?",
+    "ground_truth_answer": "People at high risk including contacts of TB patients and people living with HIV.",
+    "expected_passage": "Preventive treatment is available for people at high risk including people living with HIV.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-032",
+    "question": "Why is nutrition important in TB?",
+    "ground_truth_answer": "Undernutrition increases susceptibility and worsens outcomes.",
+    "expected_passage": "Risk is higher among people affected by undernutrition.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-033",
+    "question": "Can TB be cured?",
+    "ground_truth_answer": "Yes TB is preventable and usually curable.",
+    "expected_passage": "Tuberculosis is a preventable and usually curable disease.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-034",
+    "question": "What contributes to rising TB cases?",
+    "ground_truth_answer": "Gaps in diagnosis treatment and health system disruptions.",
+    "expected_passage": "More than 10 million people continue to fall ill with TB every year and numbers have risen since 2021.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-035",
+    "question": "Does TB affect men or women more?",
+    "ground_truth_answer": "TB affects men more than women.",
+    "expected_passage": "There are more TB cases among men than women.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-036",
+    "question": "How is TB spread in communities?",
+    "ground_truth_answer": "Through airborne droplets from someone with active pulmonary TB.",
+    "expected_passage": "TB spreads when people with TB expel bacteria into the air.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-037",
+    "question": "What is the TB bacillus?",
+    "ground_truth_answer": "It is the bacterium Mycobacterium tuberculosis.",
+    "expected_passage": "TB is caused by the bacillus Mycobacterium tuberculosis.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-038",
+    "question": "When was TB bacillus discovered?",
+    "ground_truth_answer": "It was discovered by Dr Robert Koch in 1882.",
+    "expected_passage": "Its cause remained unknown until 24 March 1882 when Dr Robert Koch announced his discovery of the bacillus responsible.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-039",
+    "question": "Why is molecular testing preferred today?",
+    "ground_truth_answer": "It is faster and more accurate than smear microscopy.",
+    "expected_passage": "Rapid molecular tests have improved substantially and are recommended as the initial diagnostic test.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-040",
+    "question": "What is the purpose of culture testing?",
+    "ground_truth_answer": "To grow TB bacteria and confirm diagnosis and drug susceptibility.",
+    "expected_passage": "Culture remains important for confirming TB and performing drug susceptibility testing.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-041",
+    "question": "What is the difference between TB infection and TB disease?",
+    "ground_truth_answer": "TB infection means the bacteria are present but inactive while TB disease means the bacteria are active and causing symptoms.",
+    "expected_passage": "TB infection is latent with no symptoms whereas TB disease is active and symptomatic.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-042",
+    "question": "Can TB be asymptomatic?",
+    "ground_truth_answer": "Yes many people with TB infection do not show symptoms.",
+    "expected_passage": "Many individuals carry TB bacteria without symptoms until the disease becomes active.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-043",
+    "question": "Why do some people progress from infection to disease?",
+    "ground_truth_answer": "Progression happens when the immune system fails to keep the bacteria under control.",
+    "expected_passage": "After infection the chance of developing TB disease is highest when immunity weakens.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-044",
+    "question": "What factors weaken the immune system in relation to TB?",
+    "ground_truth_answer": "HIV poor nutrition diabetes and substance use increase vulnerability.",
+    "expected_passage": "Risk factors like HIV undernutrition diabetes and alcohol use raise disease likelihood.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-045",
+    "question": "How long does it take after exposure for TB to develop?",
+    "ground_truth_answer": "TB disease most often develops within the first two years after exposure.",
+    "expected_passage": "The risk of developing TB is greatest in the initial two years following infection.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-046",
+    "question": "Why is undernutrition linked to TB?",
+    "ground_truth_answer": "A weakened nutritional state reduces immune defenses and makes disease more likely.",
+    "expected_passage": "People with inadequate nutrition face a higher risk of developing active TB.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-047",
+    "question": "How effective are rapid molecular TB tests?",
+    "ground_truth_answer": "They detect TB and drug resistance quickly with high accuracy.",
+    "expected_passage": "Modern molecular tests offer rapid and sensitive detection of TB and resistance markers.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-048",
+    "question": "What is the purpose of sputum smear microscopy?",
+    "ground_truth_answer": "It helps identify TB bacteria under a microscope though less sensitive than molecular tests.",
+    "expected_passage": "Smear microscopy can detect bacteria but is less sensitive especially in early disease.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-049",
+    "question": "What makes TB difficult to diagnose in children?",
+    "ground_truth_answer": "Children often have low bacterial loads and nonspecific symptoms.",
+    "expected_passage": "Pediatric TB is challenging due to minimal bacteria and overlapping symptoms with other illnesses.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-050",
+    "question": "What body fluids can be tested for extrapulmonary TB?",
+    "ground_truth_answer": "Depending on site fluids like urine cerebrospinal fluid or lymph node aspirates may be tested.",
+    "expected_passage": "Extrapulmonary TB diagnosis uses samples taken directly from the affected site.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-051",
+    "question": "Why is rifampicin resistance important?",
+    "ground_truth_answer": "Rifampicin resistance often signals multidrug resistant TB and changes treatment.",
+    "expected_passage": "Resistance to rifampicin is a key indicator for more complex TB treatment.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-052",
+    "question": "What does MDR TB require for treatment?",
+    "ground_truth_answer": "A longer regimen using multiple second line drugs.",
+    "expected_passage": "Multidrug resistant TB needs extended therapy with second line medications.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-053",
+    "question": "What is the global burden trend for TB since 2021?",
+    "ground_truth_answer": "TB cases increased after disruptions caused by the pandemic.",
+    "expected_passage": "TB incidence rose again following COVID related setbacks in health systems.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-054",
+    "question": "Why is early detection critical?",
+    "ground_truth_answer": "It prevents severe disease and reduces community spread.",
+    "expected_passage": "Early diagnosis limits transmission and improves patient outcomes.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-055",
+    "question": "What is the role of contact investigation?",
+    "ground_truth_answer": "To find people exposed to TB so they can be tested and treated.",
+    "expected_passage": "Investigating contacts identifies those at risk and helps prevent spread.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-056",
+    "question": "What is latent TB?",
+    "ground_truth_answer": "Latent TB means the bacteria remain inactive without symptoms.",
+    "expected_passage": "TB infection can remain dormant with no signs of illness.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-057",
+    "question": "Can latent TB become active?",
+    "ground_truth_answer": "Yes particularly when immunity is weakened.",
+    "expected_passage": "Latent TB can develop into disease when the immune system declines.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-058",
+    "question": "What populations are high priority for TB screening?",
+    "ground_truth_answer": "People living with HIV close contacts and high risk medical groups.",
+    "expected_passage": "Screening targets individuals with elevated TB risk.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-059",
+    "question": "Why does TB affect men more than women?",
+    "ground_truth_answer": "Behavioral social and exposure differences contribute to higher male incidence.",
+    "expected_passage": "Statistics show more TB cases among men than women worldwide.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-060",
+    "question": "What contributes to TB transmission indoors?",
+    "ground_truth_answer": "Poor ventilation and close contact with an infectious person.",
+    "expected_passage": "Transmission increases in crowded or poorly ventilated indoor areas.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-061",
+    "question": "What are signs of extrapulmonary TB?",
+    "ground_truth_answer": "They depend on the organ affected such as swollen lymph nodes or back pain.",
+    "expected_passage": "Extrapulmonary TB shows organ specific symptoms depending on the site.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-062",
+    "question": "Why is bacteriological confirmation important?",
+    "ground_truth_answer": "It provides definitive evidence of TB and guides drug resistance testing.",
+    "expected_passage": "Confirming TB through laboratory testing supports accurate diagnosis and treatment planning.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-063",
+    "question": "Can TB be prevented?",
+    "ground_truth_answer": "Yes through preventive treatment infection control and vaccination.",
+    "expected_passage": "TB prevention includes chemoprophylaxis infection control and vaccination strategies.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-064",
+    "question": "What does the BCG vaccine do?",
+    "ground_truth_answer": "BCG helps protect children from severe forms of TB.",
+    "expected_passage": "The BCG vaccine reduces the risk of serious childhood TB.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-065",
+    "question": "Can TB recur after treatment?",
+    "ground_truth_answer": "Yes relapse can occur especially if treatment was incomplete.",
+    "expected_passage": "TB may return when previous treatment was inadequate or resistance developed.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-066",
+    "question": "What is the purpose of the continuation phase of TB therapy?",
+    "ground_truth_answer": "To eliminate remaining bacteria and prevent relapse.",
+    "expected_passage": "The continuation phase targets persistent organisms after intensive therapy.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-067",
+    "question": "What effect does diabetes have on TB?",
+    "ground_truth_answer": "Diabetes weakens immunity and raises the risk of developing TB.",
+    "expected_passage": "People with diabetes face a higher chance of active TB disease.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-068",
+    "question": "How does alcohol use influence TB risk?",
+    "ground_truth_answer": "Alcohol impairs immune function and increases susceptibility.",
+    "expected_passage": "Excessive alcohol use is a recognized TB risk factor.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-069",
+    "question": "How do molecular tests detect TB?",
+    "ground_truth_answer": "They identify TB genetic material and resistance markers.",
+    "expected_passage": "Rapid tests detect TB DNA and drug resistance mutations.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-070",
+    "question": "Why are childhood TB cases often under reported?",
+    "ground_truth_answer": "Symptoms mimic other illnesses and tests are less sensitive.",
+    "expected_passage": "Children frequently have nonspecific symptoms and low bacterial levels.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-071",
+    "question": "What is the estimated percentage of global TB infection?",
+    "ground_truth_answer": "About one quarter of the world population.",
+    "expected_passage": "Roughly a quarter of people globally carry latent TB infection.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-072",
+    "question": "Why is pulmonary TB the most infectious form?",
+    "ground_truth_answer": "It involves the lungs enabling bacteria to be expelled into the air.",
+    "expected_passage": "Pulmonary disease spreads through airborne droplets released during coughing.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-073",
+    "question": "How long must an exposure be to transmit TB?",
+    "ground_truth_answer": "Transmission can occur after prolonged or repeated close contact.",
+    "expected_passage": "TB usually spreads through sustained exposure to someone infectious.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-074",
+    "question": "Why are rapid tests preferred at lower health system levels?",
+    "ground_truth_answer": "They are quick require minimal infrastructure and improve early detection.",
+    "expected_passage": "Rapid molecular tests can be used effectively in decentralized healthcare settings.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-075",
+    "question": "What influences TB mortality rates globally?",
+    "ground_truth_answer": "Health system strength diagnostic access and treatment quality.",
+    "expected_passage": "TB deaths correlate with gaps in diagnosis treatment and system capacity.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-076",
+    "question": "Can TB affect the kidneys?",
+    "ground_truth_answer": "Yes TB can involve any organ including kidneys.",
+    "expected_passage": "Extrapulmonary TB may appear in renal tissue.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-077",
+    "question": "Why does TB spread more in crowded environments?",
+    "ground_truth_answer": "Close proximity facilitates inhalation of infectious droplets.",
+    "expected_passage": "Crowded settings increase the likelihood of airborne transmission.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-078",
+    "question": "How is spinal TB identified?",
+    "ground_truth_answer": "Through imaging and sampling of affected tissue.",
+    "expected_passage": "Diagnosis relies on scans and tests taken from the spine.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-079",
+    "question": "What happens if TB treatment is interrupted?",
+    "ground_truth_answer": "It increases relapse and drug resistance risk.",
+    "expected_passage": "Stopping therapy early can lead to resistant TB and treatment failure.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-080",
+    "question": "How does smoking relate to TB risk?",
+    "ground_truth_answer": "Smoking damages lung defenses making infection more likely.",
+    "expected_passage": "Tobacco use heightens vulnerability to TB disease.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-081",
+    "question": "What is the goal of global TB strategies?",
+    "ground_truth_answer": "To reduce incidence and mortality and eventually eliminate TB.",
+    "expected_passage": "Global initiatives aim to end the TB epidemic by 2030.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-082",
+    "question": "Why are some TB cases missed?",
+    "ground_truth_answer": "Because symptoms are mild or health services are limited.",
+    "expected_passage": "Underdiagnosis occurs when symptoms resemble common illnesses or tests are inaccessible.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-083",
+    "question": "Can TB bacteria survive outside the body?",
+    "ground_truth_answer": "They survive briefly in air but not long on surfaces.",
+    "expected_passage": "TB spreads mainly through airborne particles not surface contact.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-084",
+    "question": "What are indicators of severe TB?",
+    "ground_truth_answer": "Severe weight loss persistent fever difficulty breathing and extensive lung damage.",
+    "expected_passage": "Advanced TB shows significant systemic and respiratory symptoms.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-085",
+    "question": "What makes diagnosing TB in HIV patients difficult?",
+    "ground_truth_answer": "Symptoms may be atypical and tests less sensitive.",
+    "expected_passage": "HIV coinfection can mask classical TB signs.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-086",
+    "question": "What is the role of culture in TB diagnosis?",
+    "ground_truth_answer": "It provides confirmatory evidence and supports drug testing.",
+    "expected_passage": "Culture is vital for detecting TB bacteria and assessing resistance.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-087",
+    "question": "How does preventive TB therapy work?",
+    "ground_truth_answer": "It kills dormant TB bacteria before they become active.",
+    "expected_passage": "Preventive regimens reduce the chance of future TB disease.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-088",
+    "question": "Can TB be transmitted by sharing utensils?",
+    "ground_truth_answer": "No TB is airborne and does not spread through food or utensils.",
+    "expected_passage": "Transmission occurs through inhalation of airborne bacteria.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-089",
+    "question": "What is the duration of infectiousness in untreated TB?",
+    "ground_truth_answer": "Infectiousness continues as long as untreated active pulmonary disease is present.",
+    "expected_passage": "People remain infectious until receiving effective therapy.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-090",
+    "question": "Why is cough a key TB symptom?",
+    "ground_truth_answer": "Cough helps expel bacteria increasing the chance of spread.",
+    "expected_passage": "TB in the lungs irritates airways producing persistent cough.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-091",
+    "question": "What is the role of national TB programs?",
+    "ground_truth_answer": "They coordinate diagnosis treatment surveillance and prevention.",
+    "expected_passage": "TB programs design and implement national control strategies.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-092",
+    "question": "How is TB monitored during treatment?",
+    "ground_truth_answer": "Patients undergo clinical evaluation sputum tests and radiographic monitoring.",
+    "expected_passage": "Monitoring includes periodic testing to track treatment response.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-093",
+    "question": "Can TB cause permanent damage?",
+    "ground_truth_answer": "Yes severe or late stage TB can scar lungs and impair function.",
+    "expected_passage": "Untreated TB may leave lasting structural damage.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-094",
+    "question": "Why must TB patients adhere strictly to treatment?",
+    "ground_truth_answer": "Incomplete adherence leads to treatment failure and resistance.",
+    "expected_passage": "Strict adherence ensures cure and prevents resistant strains.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-095",
+    "question": "What is the significance of rifampicin in TB therapy?",
+    "ground_truth_answer": "It is one of the core first line drugs essential for effective treatment.",
+    "expected_passage": "Rifampicin is a cornerstone medicine in standard TB regimens.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-096",
+    "question": "What challenges exist in detecting extrapulmonary TB?",
+    "ground_truth_answer": "Symptoms are varied and bacteria levels are low.",
+    "expected_passage": "Extrapulmonary TB often lacks clear signs and has fewer detectable bacteria.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-097",
+    "question": "Can TB spread without coughing?",
+    "ground_truth_answer": "Less commonly but talking or sneezing can release bacteria.",
+    "expected_passage": "TB spreads most with coughing but other respiratory actions can transmit it.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-098",
+    "question": "Why is TB still a major global health issue?",
+    "ground_truth_answer": "Persistent transmission underdiagnosis and treatment gaps keep TB widespread.",
+    "expected_passage": "Ongoing challenges maintain TB as a leading infectious disease.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  },
+  {
+    "id": "qa-099",
+    "question": "What improves TB outcomes most?",
+    "ground_truth_answer": "Early diagnosis and effective treatment.",
+    "expected_passage": "Prompt testing and complete therapy significantly improve outcomes.",
+    "relevant_passage_ids": [],
+    "reviewed": false
+  }
+]

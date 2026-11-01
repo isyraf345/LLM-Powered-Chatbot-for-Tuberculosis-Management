@@ -1,20 +1,28 @@
-# Virtual environments
-.venv/
+# Local Python environments and generated files
 venv/
-
-# Python cache
+.venv/
 __pycache__/
-*.pyc
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.ipynb_checkpoints/
 
-# Large binaries / ML artifacts
+# Credentials and local configuration
+.env
+.env.*
+!.env.example
+.streamlit/secrets.toml
+
+# Generated outputs and downloaded weights
+outputs/
 *.dll
 *.bin
 *.pt
 *.ckpt
 *.npy
-
-# Torch / compiled libraries (extra safety)
-**/site-packages/torch/
-
-# OS
+*.safetensors
 .DS_Store
+
+# Existing large presentation export
+*.mp4
