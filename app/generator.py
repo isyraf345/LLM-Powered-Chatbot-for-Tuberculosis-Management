@@ -1,11 +1,17 @@
 from openai import OpenAI
-from config import OPENAI_API_KEY, OPENAI_MODEL
+if __package__:
+    from .config import OPENAI_API_KEY, OPENAI_MODEL
+else:
+    from config import OPENAI_API_KEY, OPENAI_MODEL
 
 class AnswerGenerator:
     def __init__(self):
         if not OPENAI_API_KEY.strip():
             raise ValueError("Set the OPENAI_API_KEY environment variable before starting the chatbot.")
-        self.client = OpenAI(api_key=OPENAI_API_KEY)
+        self.client = OpenAI(api_key=OPENAI_API_KEY, timeout=60.0, max_retries=0)
+
+    def close(self):
+        self.client.close()
 
     def generate(self, question: str, context: str) -> str:
         system_prompt = (

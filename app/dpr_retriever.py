@@ -6,13 +6,14 @@ from typing import List, Dict
 import torch
 import faiss
 from transformers import (
-    DPRContextEncoder,
-    DPRContextEncoderTokenizerFast,
     DPRQuestionEncoder,
     DPRQuestionEncoderTokenizerFast
 )
 
-from config import DPR_MODELS
+if __package__:
+    from .config import DPR_MODELS
+else:
+    from config import DPR_MODELS
 
 
 class DenseRetriever:
@@ -37,16 +38,11 @@ class DenseRetriever:
         # Load tokenizers
         # -----------------------------
         print("📥 Loading tokenizers...")
-        self.ctx_tokenizer = DPRContextEncoderTokenizerFast.from_pretrained(cfg["tokenizer"])
         self.q_tokenizer = DPRQuestionEncoderTokenizerFast.from_pretrained(cfg["tokenizer"])
 
         # -----------------------------
         # Load DPR Encoders
         # -----------------------------
-        print("📥 Loading context encoder:", cfg["ctx"])
-        self.ctx_model = DPRContextEncoder.from_pretrained(cfg["ctx"]).to(self.device)
-        self.ctx_model.eval()
-
         print("📥 Loading question encoder:", cfg["query"])
         self.q_model = DPRQuestionEncoder.from_pretrained(cfg["query"]).to(self.device)
         self.q_model.eval()

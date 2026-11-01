@@ -2,6 +2,7 @@ import streamlit as st
 from dpr_retriever import DenseRetriever
 from generator import AnswerGenerator
 from config import DPR_MODELS
+from context import build_context
 
 # =============================
 # Session state
@@ -23,16 +24,6 @@ def load_generator():
 # =============================
 # Build context for LLM
 # =============================
-def build_context(passages, max_chars=3500):
-    blocks = []
-    total = 0
-    for p in passages:
-        block = f"[{p['source']} - page {p['page']}]\n{p['text']}\n\n"
-        if total + len(block) > max_chars:
-            break
-        blocks.append(block)
-        total += len(block)
-    return "".join(blocks)
 
 # =============================
 # Main app
