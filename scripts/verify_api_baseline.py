@@ -3,6 +3,7 @@
 No provider calls; never overwrites the Phase 1 baseline.
 """
 import json
+import argparse
 import os
 from pathlib import Path
 import sys
@@ -14,12 +15,16 @@ os.environ['TRANSFORMERS_OFFLINE'] = '1'
 
 
 def main():
+    parser = argparse.ArgumentParser(description=__doc__)
+    parser.add_argument('--trace-local', action='store_true', help='Exercise enabled tracing with an in-memory exporter; never contacts LangSmith.')
+    args = parser.parse_args()
     import numpy as np
     from fastapi.testclient import TestClient
     from app.api import create_app
     from app.dpr_retriever import DenseRetriever
     from app.evaluate_dpr import resolve_ids
     from app.service import ChatService
+    from app.observability import Tracer
 
     class Recorder:
         def generate(self, question, context):
@@ -29,8 +34,20 @@ def main():
         def close(self):
             pass
 
+    class LocalExporter:
+        def __init__(self):
+            self.records = []
+
+        def create_run(self, **record):
+            self.records.append(record)
+
+        def close(self):
+            pass
+
+    exporter = LocalExporter()
+    tracer = Tracer(enabled=args.trace_local, client_factory=lambda: exporter)
     recorder = Recorder()
-    service = ChatService(lambda name: DenseRetriever(name, device='cpu'), lambda: recorder)
+    service = ChatService(lambda name: DenseRetriever(name, device='cpu'), lambda: recorder, tracer=tracer)
     corpus = json.loads((ROOT / 'models/tb_index_single_nq/tb_passages.json').read_text(encoding='utf-8'))
     total = 0
     with TestClient(create_app(lambda: service)) as client:
@@ -45,6 +62,14 @@ def main():
                 assert recorder.context == example['context'], example['id']
                 total += 1
             print(f'{model}: all {len(baseline["examples"])} API requests match baseline', flush=True)
+        if args.trace_local:
+            from time import monotonic, sleep
+            deadline = monotonic() + 3
+            while tracer.exported < total and monotonic() < deadline:
+                sleep(.01)
+            assert tracer.exported == total, tracer.status()
+            assert len(exporter.records) == total * 5
+            print(f'Local tracing: {total} parent traces and {total * 4} child runs exported.')
     print(f'PASS: {total} API requests; real retrieval and exact context; generation mocked.')
 
 

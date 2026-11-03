@@ -2,8 +2,9 @@
 from contextlib import asynccontextmanager
 import logging
 from typing import Literal
+from uuid import uuid4
 
-from fastapi import FastAPI, HTTPException
+from fastapi import FastAPI, HTTPException, Request
 from openai import APIConnectionError, APIStatusError, APITimeoutError, AuthenticationError, RateLimitError
 from pydantic import BaseModel, ConfigDict, Field, field_validator
 
@@ -39,6 +40,8 @@ class ChatResponse(BaseModel):
     retriever: RetrieverName
     generation_model: str
     passages: list[Passage]
+    request_id: str
+    trace_id: str | None
 
 
 def create_app(service_factory=ChatService):
@@ -52,10 +55,18 @@ def create_app(service_factory=ChatService):
 
     application = FastAPI(title='TB Chatbot API', version='0.1.0', lifespan=lifespan)
 
+    @application.middleware('http')
+    async def request_reference(request: Request, call_next):
+        request.state.request_id = str(uuid4())
+        response = await call_next(request)
+        response.headers['X-Request-ID'] = request.state.request_id
+        return response
+
     @application.get('/health')
     def health():
         return {'status': 'ok', 'generation_configured': bool(OPENAI_API_KEY.strip()),
-                'model_loading': 'lazy'}
+                'model_loading': 'lazy',
+                'tracing': application.state.chat_service.tracer.status()}
 
     @application.get('/retrievers')
     def retrievers():
@@ -65,9 +76,9 @@ def create_app(service_factory=ChatService):
             {'id': 'lfqa', 'name': 'LFQA'}]}
 
     @application.post('/chat', response_model=ChatResponse)
-    def chat(body: ChatRequest):
+    def chat(body: ChatRequest, request: Request):
         try:
-            return application.state.chat_service.chat(body.question, body.retriever)
+            return application.state.chat_service.chat(body.question, body.retriever, request.state.request_id)
         except ServiceBusy:
             raise HTTPException(503, 'Chat service is busy; retry shortly.', headers={'Retry-After': '2'}) from None
         except ModelUnavailable:

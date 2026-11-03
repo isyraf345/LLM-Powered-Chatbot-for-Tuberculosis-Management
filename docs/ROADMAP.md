@@ -1,6 +1,6 @@
 # Seven-phase roadmap and coding-agent handoff
 
-Last updated: 2026-11-02. Phase 2 is pushed; local handoff and dotenv setup followed.
+Last updated: 2026-11-03. Phase 3 implemented locally; synthetic hosted trace verified; full chat trace pending.
 
 ## Purpose and agreed scope
 
@@ -35,8 +35,8 @@ Do not force a data engineering component into this project.
 | Phase | Status | Remaining qualification |
 | --- | --- | --- |
 | 1. Baseline and organization | Implemented and pushed | Rotated key/live answer capture, reviewed relevance labels, clean-install validation, source/index provenance remain outstanding |
-| 2. FastAPI extraction | Implemented and pushed | Real retrieval verified; live provider calls not tested |
-| 3. LangSmith observability | Not started; next | No LangSmith SDK/configuration/traces implemented |
+| 2. FastAPI extraction | Implemented and pushed | Real retrieval verified; owner supplied a live response, revealing a grounding failure |
+| 3. LangSmith observability | Implemented locally; synthetic hosted trace verified | Full live chat trace and token usage inspection pending |
 | 4. New frontend and first deployment | Not started | No React app, persistence, auth, Docker, CI, or cloud deployment |
 | 5. Image-classification experiment | Not started | No dataset selected, no feasibility review completed, no trained model |
 | 6. Image-aware chat integration | Not started | No upload API, storage, inference jobs, or image results |
@@ -47,7 +47,7 @@ evaluated. Do not describe the outstanding items above as finished.
 
 GitHub: https://github.com/isyraf345/LLM-Powered-Chatbot-for-Tuberculosis-Management
 
-Branch: `main`. Last verified pushed implementation: `ea8fe68c` (Phase 2).
+Branch: `main`. Last verified pushed commit: `6445224a` (handoff and dotenv support); Phase 2: `ea8fe68c`.
 Phase 1 integration commit: `b8f36668`. Check live Git status/history because later
 commits can supersede this snapshot. This handoff's own publication status is not
 implied by those earlier pushes.
@@ -97,7 +97,8 @@ React -> FastAPI -> chat service + LangSmith
 | `app/context.py` | Shared context construction |
 | `app/dpr_retriever.py` | Question encoding and FAISS retrieval; unused context encoder removed |
 | `app/generator.py` | Existing prompts and generation call |
-| `app/config.py` | Model definitions, portable artifact paths, environment key |
+| `app/config.py` | Model definitions, portable artifact paths, environment/dotenv key |
+| `app/observability.py` | Explicit LangSmith trace records and bounded background export |
 | `app/app.py` | Reference Streamlit UI |
 | `models/` | Preserved indexes and passage metadata |
 | `docs/baseline/` | Original manifest, observed environment, nine retrieval snapshots per model |
@@ -134,7 +135,22 @@ matched ranked IDs and exact context, with score tolerance; real Uvicorn health 
 retriever requests passed without a key; `pip check` passed. Provider calls were
 mocked. See [API details](phase-2.md).
 
-## Phase 3 — Add LangSmith observability (next)
+## Phase 3 — LangSmith observability (local implementation complete)
+
+Implemented: metadata-only tracing by default, opt-in content, five-run trace trees,
+background export with a bounded queue, sanitized errors, request correlation,
+artifact versions, actual included ranks, and provider usage metadata. See
+[Phase 3 setup](phase-3.md) and add a LangSmith key privately to `.env` to verify
+one hosted trace. No LangSmith credential was available during initial implementation. The owner later added one; a synthetic parent/child trace was uploaded and read back successfully on 2026-11-03. TLS uses the OS certificate store with verification enabled.
+
+Verified: 29 tests passed, `pip check` passed, and all 27 baseline cases matched with
+tracing disabled and again with local tracing enabled (54 API requests total).
+The enabled run exported 27 parent and 108 child records to an in-memory sink.
+These offline checks made no provider or hosted LangSmith calls. SDK serialization was tested with
+network transport mocked. No prompt/corpus repair or frontend work is included.
+
+The checklist below records the agreed scope. Local implementation/testing is done;
+synthetic hosted validation passed; full live chat trace inspection remains. Feedback storage remains Phase 4.
 
 ### First failure case to investigate
 
@@ -284,7 +300,8 @@ from the old Git history or pasted into documentation.
 - Available weeks/hours, monthly cloud/API budget, and GPU access are unknown.
 - Cloud provider, auth provider, frontend styling/component choices, image dataset,
   object store, and worker/queue are not finalized.
-- LangSmith project/key/region and content logging preference are not configured.
+- LangSmith defaults are in `.env.example` and missing settings were added to local `.env`.
+  A key is now configured and a synthetic hosted trace verified; full chat inspection is next. Content logging remains false.
 - There is no evidence that the owner has rotated the old key yet.
 - The original CSV is unreviewed; do not run scoring by marking all rows reviewed.
 - Local reports/manuals are untracked user material; leave them alone by default.

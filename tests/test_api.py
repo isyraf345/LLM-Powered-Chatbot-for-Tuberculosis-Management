@@ -11,6 +11,7 @@ import httpx
 from app.api import create_app
 from app.context import build_context
 from app.service import ChatService
+from app.observability import Tracer
 
 PASSAGES = [{'text': 'Evidence about TB.', 'source': 'guideline.pdf', 'page': 7, 'score': .8}]
 
@@ -23,7 +24,7 @@ class ApiTests(unittest.TestCase):
         self.generator.generate.return_value = 'An evidence-based answer.'
         self.rf = Mock(return_value=self.retriever)
         self.gf = Mock(return_value=self.generator)
-        self.service = ChatService(self.rf, self.gf)
+        self.service = ChatService(self.rf, self.gf, tracer=Tracer())
         self.client = TestClient(create_app(lambda: self.service))
         self.client.__enter__()
 
@@ -123,7 +124,7 @@ class GenerationAndContextTests(unittest.TestCase):
         generator.generate.return_value = 'answer'
         retriever = Mock()
         retriever.search.return_value = PASSAGES
-        service = ChatService(lambda _: retriever, lambda: generator)
+        service = ChatService(lambda _: retriever, lambda: generator, tracer=Tracer())
         with TestClient(create_app(lambda: service)) as client:
             client.post('/chat', json={'question': 'TB'})
         generator.close.assert_called_once()

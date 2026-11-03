@@ -6,8 +6,8 @@ This is an educational research project, not a diagnostic service.
 
 ## Start here: roadmap and agent handoff
 
-**Phases 1 and 2 are implemented and pushed. Phase 3 (LangSmith observability) is next.**
-Live generation testing and reviewed evaluation labels remain outstanding.
+**Phases 1 and 2 are pushed. Phase 3 tracing is implemented locally; a synthetic hosted trace has been verified.**
+Reviewed evaluation labels and answer-quality improvements remain outstanding.
 
 Read [the seven-phase roadmap and handoff](docs/ROADMAP.md) before continuing work.
 It records agreed scope, current architecture, acceptance criteria, unresolved
@@ -17,7 +17,7 @@ agents to that document. No previous chat history is needed to understand the pl
 Suggested message for a new coding agent:
 
 > Read AGENTS.md, README.md, and docs/ROADMAP.md. Inspect the current repository and
-> Git status, summarize what is already implemented, then continue Phase 3 using
+> Git status, summarize what is already implemented, then verify a full Phase 3 chat trace using
 > the handoff checklist. Preserve current chatbot behavior and the saved baselines.
 > Do not redesign the stack or start later phases without discussing the scope.
 
@@ -91,8 +91,18 @@ review differences before accepting a new baseline.
 See [Phase 1 notes](docs/phase-1.md) for baseline scope and outstanding work, and
 [evaluation instructions](evaluation/README.md) before running retrieval evaluation.
 
+## LangSmith observability (Phase 3)
+
+Tracing is implemented for the API and disabled by default. Configure the LangSmith
+settings in your Git-ignored `.env`; see [Phase 3 setup and verification](docs/phase-3.md).
+Default metadata-only traces omit questions, answers, and passage text. Explicit
+`TB_TRACE_CONTENT=true` opts into content export for public/synthetic debugging.
+Uploads happen in a bounded background worker; failures cannot interrupt chat.
+`/health` reports trace export status, and responses include request/trace references.
+
 ## Next milestone
 
-Add LangSmith traces, then replace Streamlit with React/TypeScript. Image
-classification remains a later milestone. FastAPI extraction is implemented;
-observability, the new frontend, and image classification are not yet implemented.
+A synthetic hosted trace is verified. Verify a full chat trace in LangSmith, then build the React/TypeScript
+frontend and first deployment (Phase 4). Image classification remains a later phase.
+The documented symptoms retrieval/grounding issue is still unresolved; tracing
+makes it inspectable but does not fix it automatically.

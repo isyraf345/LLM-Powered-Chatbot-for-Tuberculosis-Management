@@ -14,6 +14,8 @@ class AnswerGenerator:
         self.client.close()
 
     def generate(self, question: str, context: str) -> str:
+        self.last_usage = {}
+        self.last_messages = []
         system_prompt = (
             "You are a knowledgeable and helpful medical assistant specializing in tuberculosis (TB). "
             "Your role is to provide accurate, evidence-based information about TB based on the context provided.\n\n"
@@ -42,15 +44,31 @@ Look for both direct and indirect information that relates to the question.
 If you find relevant information, use it to construct a clear and accurate answer.
 """
 
+        self.last_messages = [
+            {"role": "system", "content": system_prompt},
+            {"role": "user", "content": user_prompt},
+        ]
         response = self.client.chat.completions.create(
             model=OPENAI_MODEL,
-            messages=[
-                {"role": "system", "content": system_prompt},
-                {"role": "user", "content": user_prompt},
-            ],
+            messages=self.last_messages,
             temperature=0.3,  # Slightly higher for more natural responses
             top_p=0.95,
             max_tokens=600  # Increased for more complete answers
         )
 
+        # Optional telemetry extraction must not affect the returned answer.
+        try:
+            usage = getattr(response, 'usage', None)
+            if usage is not None:
+                counts = {'input_tokens': usage.prompt_tokens,
+                          'output_tokens': usage.completion_tokens,
+                          'total_tokens': usage.total_tokens}
+                if all(type(value) is int and value >= 0 for value in counts.values()):
+                    details = getattr(usage, 'prompt_tokens_details', None)
+                    cached = getattr(details, 'cached_tokens', None)
+                    if type(cached) is int and cached >= 0:
+                        counts['input_token_details'] = {'cache_read': cached}
+                    self.last_usage = counts
+        except Exception:
+            self.last_usage = {}
         return response.choices[0].message.content.strip()

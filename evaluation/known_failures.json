@@ -1,0 +1,13 @@
+[
+  {
+    "id": "symptoms-single-nq-grounding",
+    "question": "What are the symptoms of tuberculosis?",
+    "retriever": "single_nq",
+    "baseline_retrieved_ids": [317, 69, 318, 68, 397],
+    "candidate_relevant_passage_ids": [451],
+    "reviewed_for_scoring": false,
+    "observation": "User-supplied live answer explicitly fell back to general knowledge because retrieved context did not list symptoms. Candidate passage 451 directly describes symptoms but was not retrieved.",
+    "corpus_issue": "Passage 397 contains unrelated text already present in all three Phase 1 passage files. It is excluded from the saved symptoms context by the character limit.",
+    "status": "Documented, not fixed. Verify traces and audit provenance before changing retrieval or corpus."
+  }
+]
