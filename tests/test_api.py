@@ -25,7 +25,7 @@ class ApiTests(unittest.TestCase):
         self.rf = Mock(return_value=self.retriever)
         self.gf = Mock(return_value=self.generator)
         self.service = ChatService(self.rf, self.gf, tracer=Tracer())
-        self.client = TestClient(create_app(lambda: self.service))
+        self.client = TestClient(create_app(lambda: self.service, database_factory=lambda: None))
         self.client.__enter__()
 
     def tearDown(self):
@@ -125,7 +125,7 @@ class GenerationAndContextTests(unittest.TestCase):
         retriever = Mock()
         retriever.search.return_value = PASSAGES
         service = ChatService(lambda _: retriever, lambda: generator, tracer=Tracer())
-        with TestClient(create_app(lambda: service)) as client:
+        with TestClient(create_app(lambda: service, database_factory=lambda: None)) as client:
             client.post('/chat', json={'question': 'TB'})
         generator.close.assert_called_once()
 

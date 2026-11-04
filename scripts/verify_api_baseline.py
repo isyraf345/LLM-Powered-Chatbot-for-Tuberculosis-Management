@@ -50,7 +50,7 @@ def main():
     service = ChatService(lambda name: DenseRetriever(name, device='cpu'), lambda: recorder, tracer=tracer)
     corpus = json.loads((ROOT / 'models/tb_index_single_nq/tb_passages.json').read_text(encoding='utf-8'))
     total = 0
-    with TestClient(create_app(lambda: service)) as client:
+    with TestClient(create_app(lambda: service, database_factory=lambda: None)) as client:
         for model in ('single_nq', 'multiset', 'lfqa'):
             baseline = json.loads((ROOT / f'docs/baseline/retrieval-{model}.json').read_text(encoding='utf-8'))
             for example in baseline['examples']:

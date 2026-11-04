@@ -10,7 +10,7 @@ export type Answer = {
 }
 
 export class ApiError extends Error {
-  constructor(message: string, public requestId: string | null = null) {
+  constructor(message: string, public requestId: string | null = null, public status?: number) {
     super(message)
   }
 }
@@ -18,7 +18,8 @@ export class ApiError extends Error {
 async function request<T>(path: string, init?: RequestInit): Promise<T> {
   let response: Response
   try {
-    response = await fetch(`/api${path}`, { ...init, signal: AbortSignal.timeout(300_000) })
+    response = await fetch(`/api${path}`, { ...init, credentials: 'same-origin',
+      headers: { 'X-TB-Client': 'web', ...init?.headers }, signal: AbortSignal.timeout(300_000) })
   } catch (error) {
     const timedOut = error instanceof DOMException && error.name === 'TimeoutError'
     throw new ApiError(timedOut
@@ -27,19 +28,41 @@ async function request<T>(path: string, init?: RequestInit): Promise<T> {
   }
   if (!response.ok) {
     const messages: Record<number, string> = {
+      401: 'Your browser session expired. Reconnect to start a new session.',
+      404: 'This conversation is no longer available. Refresh your history.',
+      409: 'This message changed. Reopen the conversation before retrying.',
       422: 'Check your question: use between 1 and 4,000 characters.',
       502: 'The answer provider could not be reached. Try again shortly.',
       503: 'The service is busy or unavailable. Wait a moment, then retry.',
       504: 'Answer generation timed out. Try again shortly.',
     }
-    throw new ApiError(messages[response.status] ?? 'The request failed. Please try again.', response.headers.get('X-Request-ID'))
+    throw new ApiError(messages[response.status] ?? 'The request failed. Please try again.', response.headers.get('X-Request-ID'), response.status)
   }
   try { return await response.json() as T }
   catch { throw new ApiError('The API returned an unreadable response. Check the backend connection.') }
 }
 
 export const getRetrievers = () => request<{ default: string; retrievers: Retriever[] }>('/retrievers')
-export const ask = (question: string, retriever: string) => request<Answer>('/chat', {
-  method: 'POST', headers: { 'Content-Type': 'application/json' },
-  body: JSON.stringify({ question, retriever }),
-})
+export type Conversation = { id: string; title: string; created_at: string; updated_at: string }
+export type SavedMessage = {
+  id: string; question: string; retriever: string; attempt: number
+  status: 'pending' | 'completed' | 'failed'
+  answer: Answer | null; error: string | null; request_id: string
+  feedback: { rating: -1 | 1; comment: string } | null
+}
+const json = (method: string, body: unknown): RequestInit => ({ method, headers: { 'Content-Type': 'application/json' }, body: JSON.stringify(body) })
+let bootstrap: Promise<{ expires_at: string }> | undefined
+export const startSession = () => {
+  bootstrap ??= request<{ expires_at: string }>('/session', { method: 'POST' }).finally(() => { bootstrap = undefined })
+  return bootstrap
+}
+export const listConversations = () => request<Conversation[]>('/conversations')
+export const createConversation = (id: string, title: string) => request<Conversation>(`/conversations/${id}`, json('PUT', { title }))
+export const readConversation = (id: string) => request<Conversation & { messages: SavedMessage[] }>(`/conversations/${id}`)
+export const renameConversation = (id: string, title: string) => request<Conversation>(`/conversations/${id}`, json('PATCH', { title }))
+export const deleteConversation = (id: string) => request(`/conversations/${id}`, { method: 'DELETE' })
+export const clearHistory = () => request('/conversations', { method: 'DELETE' })
+export const ask = (cid: string, id: string, question: string, retriever: string, attempt: number) =>
+  request<SavedMessage>(`/conversations/${cid}/messages/${id}`, json('PUT', { question, retriever, attempt }))
+export const saveFeedback = (cid: string, id: string, rating: -1 | 1, comment: string) =>
+  request(`/conversations/${cid}/messages/${id}/feedback`, json('PUT', { rating, comment }))

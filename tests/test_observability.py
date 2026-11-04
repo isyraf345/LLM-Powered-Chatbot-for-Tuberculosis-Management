@@ -39,7 +39,7 @@ class TraceTests(unittest.TestCase):
         factory = Mock()
         tracer = Tracer(client_factory=factory)
         service, _ = self.make_service(tracer)
-        with TestClient(create_app(lambda: service)) as client:
+        with TestClient(create_app(lambda: service, database_factory=lambda: None)) as client:
             r = client.post('/chat', json={'question': 'PRIVATE question'})
             self.assertEqual(r.status_code, 200)
             self.assertIsNone(r.json()['trace_id'])
@@ -50,7 +50,7 @@ class TraceTests(unittest.TestCase):
         exporter = Mock()
         tracer = Tracer(enabled=True, client_factory=lambda: exporter)
         service, _ = self.make_service(tracer)
-        with TestClient(create_app(lambda: service)) as client:
+        with TestClient(create_app(lambda: service, database_factory=lambda: None)) as client:
             r = client.post('/chat', json={'question': 'PRIVATE question'})
             wait_for(lambda: tracer.exported == 1)
             self.assertEqual(r.json()['trace_id'], r.headers['x-request-id'])
@@ -90,7 +90,7 @@ class TraceTests(unittest.TestCase):
         tracer = Tracer(enabled=True, client_factory=lambda: exporter)
         service, generator = self.make_service(tracer)
         generator.generate.side_effect = RuntimeError('PRIVATE secret provider body')
-        with TestClient(create_app(lambda: service)) as client:
+        with TestClient(create_app(lambda: service, database_factory=lambda: None)) as client:
             response = client.post('/chat', json={'question': 'PRIVATE question'})
             self.assertEqual(response.status_code, 500)
             wait_for(lambda: tracer.exported == 1)
@@ -105,7 +105,7 @@ class TraceTests(unittest.TestCase):
         exporter.create_run.side_effect = TimeoutError('PRIVATE service failure')
         tracer = Tracer(enabled=True, client_factory=lambda: exporter)
         service, _ = self.make_service(tracer)
-        with TestClient(create_app(lambda: service)) as client:
+        with TestClient(create_app(lambda: service, database_factory=lambda: None)) as client:
             r = client.post('/chat', json={'question': 'question'})
             self.assertEqual(r.status_code, 200)
             self.assertEqual(r.json()['answer'], 'PRIVATE answer')

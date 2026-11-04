@@ -13,3 +13,6 @@ pydantic==2.12.5
 python-dotenv==1.2.4
 langsmith==0.14.17
 truststore==0.10.5
+SQLAlchemy==2.0.57
+alembic==1.20.1
+psycopg[binary]==3.3.8

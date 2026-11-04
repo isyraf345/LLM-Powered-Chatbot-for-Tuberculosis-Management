@@ -3,13 +3,18 @@ from contextlib import asynccontextmanager
 import logging
 from typing import Literal
 from uuid import uuid4
+import asyncio
 
 from fastapi import FastAPI, HTTPException, Request
 from openai import APIConnectionError, APIStatusError, APITimeoutError, AuthenticationError, RateLimitError
 from pydantic import BaseModel, ConfigDict, Field, field_validator
+from fastapi.responses import JSONResponse
+from sqlalchemy.exc import SQLAlchemyError
 
 from .config import OPENAI_API_KEY
 from .service import ChatService, GenerationUnavailable, ModelUnavailable, ServiceBusy
+from .database import from_env
+from .history import cleanup, history_router
 
 logger = logging.getLogger(__name__)
 RetrieverName = Literal['single_nq', 'multiset', 'lfqa']
@@ -44,14 +49,32 @@ class ChatResponse(BaseModel):
     trace_id: str | None
 
 
-def create_app(service_factory=ChatService):
+def create_app(service_factory=ChatService, database_factory=from_env):
     @asynccontextmanager
     async def lifespan(application):
         application.state.chat_service = service_factory()
+        application.state.database = database_factory()
+
+        async def clean_expired():
+            while True:
+                try:
+                    await asyncio.to_thread(cleanup, application.state.database)
+                except SQLAlchemyError:
+                    logger.warning('History cleanup unavailable; check database setup.')
+                await asyncio.sleep(3600)
+
+        cleanup_task = asyncio.create_task(clean_expired())
         try:
             yield
         finally:
+            cleanup_task.cancel()
+            try:
+                await cleanup_task
+            except asyncio.CancelledError:
+                pass
             application.state.chat_service.close()
+            if application.state.database:
+                application.state.database.close()
 
     application = FastAPI(title='TB Chatbot API', version='0.1.0', lifespan=lifespan)
 
@@ -60,7 +83,13 @@ def create_app(service_factory=ChatService):
         request.state.request_id = str(uuid4())
         response = await call_next(request)
         response.headers['X-Request-ID'] = request.state.request_id
+        response.headers['Cache-Control'] = 'no-store'
         return response
+
+    @application.exception_handler(SQLAlchemyError)
+    async def database_failure(request, exc):
+        logger.warning('History database operation failed (%s)', type(exc).__name__)
+        return JSONResponse(status_code=503, content={'detail': 'History storage is unavailable. Please retry later.'})
 
     @application.get('/health')
     def health():
@@ -96,6 +125,7 @@ def create_app(service_factory=ChatService):
             logger.error('Chat failed (%s)', type(exc).__name__)
             raise HTTPException(500, 'The chat request could not be completed.') from None
 
+    application.include_router(history_router(chat))
     return application
 
 

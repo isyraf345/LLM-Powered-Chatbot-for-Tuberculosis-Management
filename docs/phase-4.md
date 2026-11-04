@@ -14,11 +14,12 @@ can be retried with its original question/retriever without duplicating the turn
 Raw model HTML and images are not rendered. Scores are labeled as retrieval
 similarity, not confidence. Source results are not presented as verified citations.
 
-Messages are held only in React memory and lost on refresh. They are still sent
-to the backend/provider as part of answering; LangSmith content export follows
-the backend configuration. Only the current question is sent to generation.
-There is no persistent history, authentication, feedback storage, or deployment yet.
-Phase 4 as a whole is **in progress**, not complete.
+Anonymous saved history is now implemented with PostgreSQL, SQLAlchemy, and
+Alembic. No account sign-in is required: a fixed 30-day cookie session owns saved
+conversations. The sidebar lists previous chats and supports reopening, renaming,
+deletion, and clear-all. Answers support ratings and comments. Only the current
+question is sent to generation. See [history setup and ownership rules](history.md).
+Phase 4 as a whole is **in progress**: deployment and public-access controls remain.
 
 UI preference (2026-11-05): restored the original green sidebar layout, headline,
 and suggestion cards at the owner's request. No backend behavior changed.
@@ -27,7 +28,8 @@ port 5174 to avoid interrupting the existing development server).
 
 ## Run locally
 
-Start the backend from the repository root:
+First follow [PostgreSQL setup](history.md), including `alembic upgrade head`.
+Then start the backend from the repository root:
 
 ```powershell
 .\venv\Scripts\python.exe -m uvicorn app.api:app --host 127.0.0.1 --port 8000
@@ -79,17 +81,19 @@ permission to start and clean up local server/browser processes.
 
 For manual integration, start both servers, ask a public test question, expand
 passages and request details, and find its trace in LangSmith if tracing is enabled.
-Stop the backend to inspect failure/retry behavior. Refresh to verify session clearing.
+Stop the backend to inspect failure/retry behavior. Refresh, then reopen the saved
+conversation from History to verify persistence.
 
 `npm run build` emits `frontend/dist`. `npm run preview` serves it locally at
 http://127.0.0.1:4173 with the same API proxy. Preview is not a production server.
-Production hosting needs an equivalent `/api` reverse proxy and authenticated API.
+Production hosting needs an equivalent `/api` reverse proxy, HTTPS cookies,
+rate limits, and abuse controls.
 
 ## Remaining Phase 4 milestones
 
-1. PostgreSQL schema and migrations for owned conversations, messages, and feedback.
-2. Authentication with server-side ownership checks; agree retention/deletion behavior.
-3. Docker and CI checks; choose a cloud provider against budget, then deploy.
+1. Add app Docker containers and CI checks. The current Compose file runs PostgreSQL only.
+2. Add rate limits and abuse controls for anonymous public access.
+3. Choose a cloud provider against budget, configure HTTPS, secrets, and database backups.
 4. Verify the complete deployed interaction and document setup and limitations.
 
 The known symptoms retrieval/grounding failure remains tracked separately.

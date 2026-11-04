@@ -6,7 +6,7 @@ This is an educational research project, not a diagnostic service.
 
 ## Start here: roadmap and agent handoff
 
-**Phases 1–3 are pushed. Phase 4 is in progress with a React/TypeScript frontend.**
+**Phases 1–3 are pushed. Phase 4 includes the React frontend and anonymous saved history; deployment remains.**
 A synthetic hosted trace has been verified; full live chat trace inspection remains pending.
 Reviewed evaluation labels and answer-quality improvements remain outstanding.
 
@@ -46,7 +46,8 @@ Open `http://127.0.0.1:8000/docs` for interactive API documentation. `/health` a
 `/retrievers` work without a key or loaded models. `/chat` requires a valid key.
 Use one worker initially; each worker has its own model memory. The service handles
 one chat at a time and returns 503 with `Retry-After` when busy. It is a local API
-at this stage, without authentication, persistence, or a public deployment setup.
+at this stage. Anonymous cookie sessions protect saved history; public deployment
+and abuse controls remain outstanding.
 
 See [API contract and lifecycle](docs/phase-2.md) for requests, errors, and verification.
 
@@ -112,13 +113,17 @@ npm run dev
 ```
 
 Open http://127.0.0.1:5173. The local Vite proxy connects the frontend to FastAPI;
-provider credentials stay in the backend root `.env`. Messages currently live only
-in the tab and clear on refresh. See [Phase 4 setup and checks](docs/phase-4.md).
+provider credentials stay in the backend root `.env`. Start PostgreSQL and apply
+migrations first using [saved-history setup](docs/history.md). History is tied to
+an anonymous browser cookie for 30 days; no sign-in is required. Clearing cookies
+removes access. Saved history does not give the model conversational memory.
+See [Phase 4 setup and checks](docs/phase-4.md).
 
 ## Next milestone
 
 A synthetic hosted trace is verified. Verify a full chat trace through the React frontend,
-then continue Phase 4 with PostgreSQL, authentication, and delivery.
+then continue Phase 4 with delivery and public-access protections.
+Account sign-in was explicitly deferred in favor of anonymous sessions.
 Image classification remains a later phase.
 The documented symptoms retrieval/grounding issue is still unresolved; tracing
 makes it inspectable but does not fix it automatically.

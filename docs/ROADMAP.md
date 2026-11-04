@@ -1,6 +1,6 @@
 # Seven-phase roadmap and coding-agent handoff
 
-Last updated: 2026-11-05. Phase 3 pushed; Phase 4 frontend implemented locally; original green layout restored. Full live chat trace inspection remains pending.
+Last updated: 2026-11-05. Phase 3 pushed; Phase 4 frontend pushed; anonymous PostgreSQL history implemented locally. Full live chat trace inspection remains pending.
 
 ## Purpose and agreed scope
 
@@ -20,7 +20,7 @@ Do not force a data engineering component into this project.
 - Preserve DPR + FAISS and all three retriever options initially.
 - LangSmith is the selected chatbot observability tool. It does not require a
   LangChain rewrite or LangGraph.
-- PostgreSQL is planned for persistent application records. Object storage is
+- PostgreSQL stores anonymous sessions, conversations, messages, and feedback. Object storage is
   planned for uploaded images/model files when the image feature is built.
 - PyTorch is planned for image-model training and inference.
 - Docker, GitHub Actions, and one cloud provider are planned for delivery.
@@ -37,7 +37,7 @@ Do not force a data engineering component into this project.
 | 1. Baseline and organization | Implemented and pushed | Rotated key/live answer capture, reviewed relevance labels, clean-install validation, source/index provenance remain outstanding |
 | 2. FastAPI extraction | Implemented and pushed | Real retrieval verified; owner supplied a live response, revealing a grounding failure |
 | 3. LangSmith observability | Implemented and pushed; synthetic hosted trace verified | Full live chat trace and token usage inspection pending |
-| 4. New frontend and first deployment | In progress: React/TypeScript frontend implemented locally | Persistence, auth, feedback, Docker, CI, and cloud deployment remain |
+| 4. New frontend and first deployment | In progress: frontend pushed; anonymous history and feedback implemented locally | App containers, CI, rate limits, and cloud deployment remain; account sign-in deferred |
 | 5. Image-classification experiment | Not started | No dataset selected, no feasibility review completed, no trained model |
 | 6. Image-aware chat integration | Not started | No upload API, storage, inference jobs, or image results |
 | 7. Portfolio evidence | Partially documented only | Final demo, measured results, and resume claims remain |
@@ -47,7 +47,7 @@ evaluated. Do not describe the outstanding items above as finished.
 
 GitHub: https://github.com/isyraf345/LLM-Powered-Chatbot-for-Tuberculosis-Management
 
-Branch: `main`. Last verified pushed commit: `c0bcba1e` (Phase 3 observability); Phase 2: `ea8fe68c`.
+Branch: `main`. Last verified pushed commit: `849f99d9` (React frontend); Phase 2: `ea8fe68c`.
 Phase 1 integration commit: `b8f36668`. Check live Git status/history because later
 commits can supersede this snapshot. This handoff's own publication status is not
 implied by those earlier pushes.
@@ -207,8 +207,9 @@ optional and should not block a usable first version.
 First milestone implemented: `frontend/` uses React/TypeScript and Vite with a local
 `/api` proxy. Chat, retriever selection, Markdown answers, source passages,
 request/trace details, loading/error/retry, and session reset are available.
-Messages are in browser memory only; feedback is not implemented. Backend behavior
-is unchanged. See [Phase 4 notes](phase-4.md) for startup and verification.
+The frontend now saves and reopens history through anonymous cookie sessions,
+with rename/delete/clear and feedback controls. Retrieval and generation behavior
+remain unchanged. See [Phase 4 notes](phase-4.md) and [history setup](history.md).
 
 UI preference (2026-11-05): restored the original green sidebar, headline, and
 suggestion cards at the owner's request. Retrieval controls remain in the sidebar;
@@ -219,14 +220,27 @@ tests, desktop/mobile visual inspection, and built frontend proxy access to the
 real API health/retriever endpoints. Browser chat tests mocked generation; live
 browser/provider/trace inspection remains outstanding.
 
-Add PostgreSQL and migrations for retained conversations/messages/feedback. Select
-an established authentication approach before exposing private persisted records.
-Check ownership on all record access. Decide retention/deletion behavior. Treat
-conversational memory as a separately evaluated behavior change.
+Persistence milestone (2026-11-05): PostgreSQL 17 in local Docker, SQLAlchemy, and
+Alembic migration for browser sessions, conversations, message exchanges, and
+feedback. No account sign-in by owner request. HttpOnly/SameSite cookies carry
+random session credentials; only their hashes are stored. Every history route
+checks ownership; mutation routes require a custom header. Sessions expire after
+30 days; startup/hourly cleanup cascades expired history. Deletion cascades to
+messages and feedback. Explicit attempts and stable UUIDs avoid ordinary duplicate
+submissions; stale pending messages become retryable after ten minutes. There is
+no exactly-once provider billing guarantee across crashes. Saved history does not
+become conversational model memory. See history.md for operational limitations.
+
+Verified: 41 Python tests (including 12 PostgreSQL integration tests), seven browser
+tests, schema/migration parity, dependency checks, and the production build passed.
+A real browser-to-Vite-to-FastAPI-to-PostgreSQL check verified saved history,
+refresh/reopen, feedback, separate browser sessions, and deletion with fake generation.
+Live provider/hosted tracing verification remains separate.
 
 Add Docker, relevant GitHub Actions checks, environment secrets, and deployment
 to one provider selected against budget. Configure frontend/API origins explicitly.
-Do not publicly deploy the current unauthenticated cost-incurring API as-is.
+Do not publicly deploy the current cost-incurring API without rate limits and
+abuse controls. Anonymous sessions protect history ownership, not paid API usage.
 
 Done when: another person can use the deployed chatbot, inspect sources, submit
 feedback, and see reliable loading/errors; developers can investigate traces.
@@ -313,8 +327,10 @@ from the old Git history or pasted into documentation.
 ## Open decisions and limits
 
 - Available weeks/hours, monthly cloud/API budget, and GPU access are unknown.
-- Cloud provider, auth provider, frontend styling/component choices, image dataset,
-  object store, and worker/queue are not finalized.
+- Cloud provider, public-access controls, image dataset,
+  object store, and worker/queue are not finalized. Account sign-in is deferred.
+- Local PostgreSQL and DATABASE_URL are configured; restart the API to load the
+  history routes. Compose starts only the database, not the app services.
 - LangSmith defaults are in `.env.example` and missing settings were added to local `.env`.
   A key is now configured and a synthetic hosted trace verified; full chat inspection is next. Content logging remains false.
 - There is no evidence that the owner has rotated the old key yet.
