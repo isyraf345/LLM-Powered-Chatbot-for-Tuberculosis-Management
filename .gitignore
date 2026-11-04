@@ -6,6 +6,11 @@ __pycache__/
 .pytest_cache/
 .coverage
 htmlcov/
+node_modules/
+frontend/dist/
+frontend/playwright-report/
+frontend/test-results/
+frontend/*.log
 .ipynb_checkpoints/
 
 # Credentials and local configuration

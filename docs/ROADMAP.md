@@ -1,6 +1,6 @@
 # Seven-phase roadmap and coding-agent handoff
 
-Last updated: 2026-11-03. Phase 3 implemented locally; synthetic hosted trace verified; full chat trace pending.
+Last updated: 2026-11-05. Phase 3 pushed; Phase 4 frontend implemented locally; original green layout restored. Full live chat trace inspection remains pending.
 
 ## Purpose and agreed scope
 
@@ -36,8 +36,8 @@ Do not force a data engineering component into this project.
 | --- | --- | --- |
 | 1. Baseline and organization | Implemented and pushed | Rotated key/live answer capture, reviewed relevance labels, clean-install validation, source/index provenance remain outstanding |
 | 2. FastAPI extraction | Implemented and pushed | Real retrieval verified; owner supplied a live response, revealing a grounding failure |
-| 3. LangSmith observability | Implemented locally; synthetic hosted trace verified | Full live chat trace and token usage inspection pending |
-| 4. New frontend and first deployment | Not started | No React app, persistence, auth, Docker, CI, or cloud deployment |
+| 3. LangSmith observability | Implemented and pushed; synthetic hosted trace verified | Full live chat trace and token usage inspection pending |
+| 4. New frontend and first deployment | In progress: React/TypeScript frontend implemented locally | Persistence, auth, feedback, Docker, CI, and cloud deployment remain |
 | 5. Image-classification experiment | Not started | No dataset selected, no feasibility review completed, no trained model |
 | 6. Image-aware chat integration | Not started | No upload API, storage, inference jobs, or image results |
 | 7. Portfolio evidence | Partially documented only | Final demo, measured results, and resume claims remain |
@@ -47,7 +47,7 @@ evaluated. Do not describe the outstanding items above as finished.
 
 GitHub: https://github.com/isyraf345/LLM-Powered-Chatbot-for-Tuberculosis-Management
 
-Branch: `main`. Last verified pushed commit: `6445224a` (handoff and dotenv support); Phase 2: `ea8fe68c`.
+Branch: `main`. Last verified pushed commit: `c0bcba1e` (Phase 3 observability); Phase 2: `ea8fe68c`.
 Phase 1 integration commit: `b8f36668`. Check live Git status/history because later
 commits can supersede this snapshot. This handoff's own publication status is not
 implied by those earlier pushes.
@@ -203,6 +203,21 @@ can feed regression cases. Continue label review separately; tracing is not accu
 Build React/TypeScript chat with source passages, loading/error/retry states,
 retriever selection, and feedback. Connect it to the existing API. Streaming is
 optional and should not block a usable first version.
+
+First milestone implemented: `frontend/` uses React/TypeScript and Vite with a local
+`/api` proxy. Chat, retriever selection, Markdown answers, source passages,
+request/trace details, loading/error/retry, and session reset are available.
+Messages are in browser memory only; feedback is not implemented. Backend behavior
+is unchanged. See [Phase 4 notes](phase-4.md) for startup and verification.
+
+UI preference (2026-11-05): restored the original green sidebar, headline, and
+suggestion cards at the owner's request. Retrieval controls remain in the sidebar;
+sources and request details remain expandable. No API behavior changed.
+
+Verified for this milestone: TypeScript/production build, five Playwright browser
+tests, desktop/mobile visual inspection, and built frontend proxy access to the
+real API health/retriever endpoints. Browser chat tests mocked generation; live
+browser/provider/trace inspection remains outstanding.
 
 Add PostgreSQL and migrations for retained conversations/messages/feedback. Select
 an established authentication approach before exposing private persisted records.

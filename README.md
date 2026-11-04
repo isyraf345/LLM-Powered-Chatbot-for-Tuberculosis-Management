@@ -1,12 +1,13 @@
 # Tuberculosis information chatbot
 
-Current application: FastAPI + DPR retrieval + local FAISS indexes + GPT-4o-mini.
+Current application: React/TypeScript + FastAPI + DPR retrieval + local FAISS indexes + GPT-4o-mini.
 The Streamlit interface remains available as a reference during frontend migration.
 This is an educational research project, not a diagnostic service.
 
 ## Start here: roadmap and agent handoff
 
-**Phases 1 and 2 are pushed. Phase 3 tracing is implemented locally; a synthetic hosted trace has been verified.**
+**Phases 1–3 are pushed. Phase 4 is in progress with a React/TypeScript frontend.**
+A synthetic hosted trace has been verified; full live chat trace inspection remains pending.
 Reviewed evaluation labels and answer-quality improvements remain outstanding.
 
 Read [the seven-phase roadmap and handoff](docs/ROADMAP.md) before continuing work.
@@ -100,9 +101,24 @@ Default metadata-only traces omit questions, answers, and passage text. Explicit
 Uploads happen in a bounded background worker; failures cannot interrupt chat.
 `/health` reports trace export status, and responses include request/trace references.
 
+## React frontend (Phase 4)
+
+Start the API as above, then in another terminal:
+
+```powershell
+cd frontend
+npm ci
+npm run dev
+```
+
+Open http://127.0.0.1:5173. The local Vite proxy connects the frontend to FastAPI;
+provider credentials stay in the backend root `.env`. Messages currently live only
+in the tab and clear on refresh. See [Phase 4 setup and checks](docs/phase-4.md).
+
 ## Next milestone
 
-A synthetic hosted trace is verified. Verify a full chat trace in LangSmith, then build the React/TypeScript
-frontend and first deployment (Phase 4). Image classification remains a later phase.
+A synthetic hosted trace is verified. Verify a full chat trace through the React frontend,
+then continue Phase 4 with PostgreSQL, authentication, and delivery.
+Image classification remains a later phase.
 The documented symptoms retrieval/grounding issue is still unresolved; tracing
 makes it inspectable but does not fix it automatically.
